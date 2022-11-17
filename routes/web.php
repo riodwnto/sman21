@@ -20,3 +20,19 @@ Route::get('/', function () {
 Route::get('sejarah', function () {
     return view('sejarah');
 });
+
+Route::get('visimisi', function () {
+    return view('visimisi');
+});
+
+Route::get('so', function () {
+    return view('so');
+});
+
+Route::get('dirgu', function () {
+    return view('dirgu');
+});
+
+Route::get('dirtu', function () {
+    return view('dirtu');
+});

@@ -70,14 +70,10 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="height: 40vh">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>SMA NEGERI 21 BANDUNG</span></h1>
-      <h2 class="mt-2">Selamat Datang di Website Resmi SMA Negeri 21 Bandung</h2>
-      <h3 class="mt-1">Salikur Hebat, Salikur Juara</h3>
-    </div>
-    <div class="d-flex position-absolute bottom-0 start-50 translate-middle-x mb-5">
-      <a href="#counts" class="btn-get-started scrollto btn btn-outline-dark"><i class="bi bi-arrow-down"></i></a>
+      <h1>SEJARAH</span></h1>
+      <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
     </div>
   </section><!-- End Hero -->
 
@@ -88,8 +84,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
+          <h2>Sejarah</h2>
+          <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
