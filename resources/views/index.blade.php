@@ -155,7 +155,7 @@
 
         <div class="section-title">
           <h2>Berita</h2>
-          <h3>Our Hardworking <span>Team</span></h3>
+          <h3>Berita <span>Terkini</span></h3>
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
