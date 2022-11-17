@@ -227,7 +227,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
+                <h4>Amanda Rawles</h4>
                 <span>Accountant</span>
               </div>
             </div>
