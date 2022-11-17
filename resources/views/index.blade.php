@@ -41,16 +41,16 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li class="dropdown"><a href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Sejarah</a></li>
-              <li><a href="#">Visi dan Misi</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li class="dropdown"><a href="#"><span>Direktori</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="sejarah">Sejarah</a></li>
+              <li><a href="visimisi">Visi dan Misi</a></li>
+              <li><a href="so">Struktur Organisasi</a></li>
+              <li class="dropdown"><a href="#"><span>Direktori</span><i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Direktori Guru</a></li>
-                  <li><a href="#">Direktori Tata Usaha</a></li>
+                  <li><a href="dirgu">Direktori Guru</a></li>
+                  <li><a href="dirtu">Direktori Tata Usaha</a></li>
                 </ul>
               </li>
             </ul>
@@ -90,7 +90,7 @@
         <div class="section-title">
           <h2>Informasi Umum</h2>
           <h3>SMA Negeri 21 <span>Bandung</span></h3>
-          <p>SMA SAMSAMSAMSAMMAS ASM ASM MAMS AM.</p> 
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente beatae corrupti placeat quas doloremque iusto, consequuntur ad voluptates. Impedit architecto autem fugit temporibus debitis eius ea excepturi esse distinctio. Fuga.</p> 
         </div>
 
         <div class="row">
@@ -98,7 +98,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1016" data-purecounter-duration="1" class="purecounter"></span>
               <p>Peserta Didik</p>
             </div>
           </div>
@@ -106,7 +106,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="bi bi-person-check"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="54" data-purecounter-duration="1" class="purecounter"></span>
               <p>Tenaga Pendidik</p>
             </div>
           </div>
@@ -114,7 +114,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-person-workspace"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
               <p>Tenaga Kependidikan</p>
             </div>
           </div>
@@ -122,7 +122,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-universal-access"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
               <p>Ekstrakulikuler</p>
             </div>
           </div>
