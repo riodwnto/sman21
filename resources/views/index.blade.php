@@ -247,7 +247,7 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; 2020 <strong><span>A2 Dev's</span></strong>. All Rights Reserved
+        &copy; 2022 <strong><span>A2 Dev's</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <a href="#"><i class="bi bi-facebook"></i></a>
