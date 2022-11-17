@@ -90,7 +90,7 @@
         <div class="section-title">
           <h2>Informasi Umum</h2>
           <h3>SMA Negeri 21 <span>Bandung</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>SMA SAMSAMSAMSAMMAS ASM ASM MAMS AM.</p> 
         </div>
 
         <div class="row">
