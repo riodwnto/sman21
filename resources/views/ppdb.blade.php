@@ -42,7 +42,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">Home</a></li>
-          <li class="dropdown"><a class="nav-link scrollto active" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="sejarah">Sejarah</a></li>
               <li><a href="visimisi">Visi dan Misi</a></li>
@@ -57,9 +57,9 @@
           </li>
           <li><a class="nav-link scrollto" href="ekskul">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
-          <li><a class="nav-link scrollto " href="#">PPDB</a></li>
+          <li><a class="nav-link scrollto active" href="ppdb">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
-          <li><a class="nav-link scrollto" href="#">Kontak</a></li>
+          <li><a class="nav-link scrollto" href="kontak">Kontak</a></li>
           <li><a class="nav-link scrollto" href="#"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
           <li><a class="nav-link scrollto" href="#"><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>
