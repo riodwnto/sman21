@@ -125,6 +125,8 @@
     </div>
   </section><!-- End About Section -->
 
+</main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
 

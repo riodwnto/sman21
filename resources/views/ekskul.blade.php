@@ -163,6 +163,8 @@
     </div>
   </section><!-- End Testimonials Section -->
 
+</main><!-- End #main -->
+
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
