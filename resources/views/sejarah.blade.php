@@ -41,8 +41,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li class="dropdown"><a href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a href="/">Home</a></li>
+          <li class="dropdown"><a class="nav-link scrollto active" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="sejarah">Sejarah</a></li>
               <li><a href="visimisi">Visi dan Misi</a></li>

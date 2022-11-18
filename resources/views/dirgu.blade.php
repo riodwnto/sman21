@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SMA Negeri 21 Bandung - Sejarah</title>
+  <title>SMA Negeri 21 Bandung - Direktori Guru</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,8 +41,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li class="dropdown"><a href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a href="/">Home</a></li>
+          <li class="dropdown"><a class="nav-link scrollto active" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="sejarah">Sejarah</a></li>
               <li><a href="visimisi">Visi dan Misi</a></li>
@@ -69,80 +69,48 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>SMA NEGERI 21 BANDUNG</span></h1>
-      <h2 class="mt-2">Selamat Datang di Website Resmi SMA Negeri 21 Bandung</h2>
-      <h3 class="mt-1">Salikur Hebat, Salikur Juara</h3>
-    </div>
-    <div class="d-flex position-absolute bottom-0 start-50 translate-middle-x mb-5">
-      <a href="#counts" class="btn-get-started scrollto btn btn-outline-dark"><i class="bi bi-arrow-down"></i></a>
-    </div>
-  </section><!-- End Hero -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="height: 40vh">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <h1 style="font-size: 90px">DIREKTORI GURU</h1>
+    <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
+  </div>
+</section><!-- End Hero -->
 
-  <main id="main">
+<main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; 2022 <strong><span>A2 Dev's</span></strong>. All Rights Reserved
+      <div class="section-title">
+        <h2>Direktori Guru</h2>
+        <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
-      <div class="credits">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-youtube"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
+
+      <div class="row">
+        <div class="col-lg-16" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
       </div>
+  </div>
+</section><!-- End About Section -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; 2022 <strong><span>A2 Dev's</span></strong>. All Rights Reserved
     </div>
-  </footer><!-- End Footer -->
+    <div class="credits">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
