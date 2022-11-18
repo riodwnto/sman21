@@ -55,7 +55,7 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#">Ekstrakulikuler</a></li>
+          <li><a class="nav-link scrollto" href="ekskul">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
           <li><a class="nav-link scrollto " href="#">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
@@ -95,8 +95,6 @@
             <p>
               Terwujudnya sekolah yang bermutu dalam menciptakan mutu lulusan yang berbudi pekerti luhur, berprestasi dalam bidang akademik dan non akademik, serta berbudaya lingkungan.
             </p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content" data-aos="fade-up" data-aos-delay="100">
             <h3>MISI</h3>
             <ol style="list-style-type: decimal">
               <li>
@@ -122,7 +120,7 @@
               </li>
             </ol>
           </div>
-          <div class="col-lg-12 mt-3 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content" data-aos="fade-up" data-aos-delay="100">
             <h3>TUJUAN</h3>
             <ol style="list-style-type: decimal">
               <li>

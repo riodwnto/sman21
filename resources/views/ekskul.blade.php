@@ -55,7 +55,7 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="ekskul">Ekstrakulikuler</a></li>
+          <li><a class="nav-link scrollto" href="#">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
           <li><a class="nav-link scrollto " href="#">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>

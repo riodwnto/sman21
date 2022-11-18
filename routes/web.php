@@ -36,3 +36,7 @@ Route::get('dirgu', function () {
 Route::get('dirtu', function () {
     return view('dirtu');
 });
+
+Route::get('ekskul', function () {
+    return view('ekskul');
+});
