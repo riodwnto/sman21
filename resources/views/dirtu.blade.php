@@ -57,9 +57,9 @@
           </li>
           <li><a class="nav-link scrollto" href="ekskul">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
-          <li><a class="nav-link scrollto " href="#">PPDB</a></li>
+          <li><a class="nav-link scrollto " href="ppdb">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
-          <li><a class="nav-link scrollto" href="#">Kontak</a></li>
+          <li><a class="nav-link scrollto" href="kontak">Kontak</a></li>
           <li><a class="nav-link scrollto" href="#"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
           <li><a class="nav-link scrollto" href="#"><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>

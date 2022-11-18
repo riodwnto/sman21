@@ -40,3 +40,11 @@ Route::get('dirtu', function () {
 Route::get('ekskul', function () {
     return view('ekskul');
 });
+
+Route::get('ppdb', function () {
+    return view('ppdb');
+});
+
+Route::get('kontak', function () {
+    return view('kontak');
+});
