@@ -69,15 +69,15 @@
     </div>
   </header><!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center" style="height: 40vh">
-  <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <h1 style="font-size: 90px">DIREKTORI TATA USAHA</h1>
-    <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
-  </div>
-</section><!-- End Hero -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="height: 40vh">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1 style="font-size: 90px">DIREKTORI TATA USAHA</h1>
+      <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
+    </div>
+  </section><!-- End Hero -->
 
-<main id="main">
+  <main id="main">
 
   <!-- ======= About Section ======= -->
   <section id="team" class="team section-bg">

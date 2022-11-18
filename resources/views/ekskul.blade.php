@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SMA Negeri 21 Bandung - Direktori Guru</title>
+  <title>SMA Negeri 21 Bandung - Ekstrakulikuler</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">Home</a></li>
-          <li class="dropdown"><a class="nav-link scrollto active" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="sejarah">Sejarah</a></li>
               <li><a href="visimisi">Visi dan Misi</a></li>
@@ -55,7 +55,7 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#">Ekstrakulikuler</a></li>
+          <li><a class="nav-link scrollto active" href="#">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
           <li><a class="nav-link scrollto " href="#">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
@@ -69,103 +69,99 @@
     </div>
   </header><!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center" style="height: 40vh">
-  <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <h1 style="font-size: 90px">DIREKTORI GURU</h1>
-    <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
-  </div>
-</section><!-- End Hero -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="height: 40vh">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1 style="font-size: 90px">EKSTRAKULIKULER</h1>
+      <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
+    </div>
+  </section><!-- End Hero -->
 
-<main id="main">
+  <main id="main">
 
-  <!-- ======= About Section ======= -->
-  <section id="team" class="team section-bg">
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Direktori Guru</h2>
+        <h2>Ekstrakulikuler</h2>
         <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
         <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
 
       <div class="row">
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-            </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-            </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-            </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-            </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
           </div>
         </div>
 
       </div>
-  </div>
-</section><!-- End About Section -->
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
