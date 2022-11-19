@@ -72,7 +72,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center" style="height: 40vh">
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <h1 style="font-size: 90px">DIREKTORI GURU</h1>
+    <h1>DIREKTORI GURU</h1>
     <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
   </div>
 </section><!-- End Hero -->

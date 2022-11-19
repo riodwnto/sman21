@@ -72,7 +72,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" style="height: 40vh">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 style="font-size: 90px">EKSTRAKULIKULER</h1>
+      <h1>EKSTRAKULIKULER</h1>
       <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
     </div>
   </section><!-- End Hero -->
@@ -117,49 +117,6 @@
 
     </div>
   </section><!-- End Services Section -->
-
-  <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container" data-aos="zoom-in">
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="icon-box">
-                    <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                  </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                  <div class="icon-box">
-                    <div class="icon"><i class="bx bx-file"></i></div>
-                    <h4><a href="">Sed ut perspiciatis</a></h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                  </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="icon-box">
-                    <div class="icon"><i class="bx bx-tachometer"></i></div>
-                    <h4><a href="">Magni Dolores</a></h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-  </section><!-- End Testimonials Section -->
 
 </main><!-- End #main -->
 
