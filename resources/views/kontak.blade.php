@@ -60,8 +60,8 @@
           <li><a class="nav-link scrollto " href="ppdb">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
           <li><a class="nav-link scrollto active" href="kontak">Kontak</a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto" href="tel:0227565909"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto" href="mailto:sman21bdg@yahoo.co.id" target="_blank""><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,7 +72,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center" style="height: 40vh">
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <h1>KONTRAK</h1>
+    <h1>KONTAK</h1>
     <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
   </div>
 </section><!-- End Hero -->
@@ -94,7 +94,7 @@
           <div class="info-box mb-4">
             <i class="bx bx-map"></i>
             <h3>Our Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+            <p>Jl. Manjahlega No.30, Margasari, Kec. Buahbatu, Kota Bandung, Jawa Barat 40286</p>
           </div>
         </div>
 
@@ -102,7 +102,7 @@
           <div class="info-box  mb-4">
             <i class="bx bx-envelope"></i>
             <h3>Email Us</h3>
-            <p>contact@example.com</p>
+            <p>sman21bdg@yahoo.co.id</p>
           </div>
         </div>
 
@@ -110,7 +110,7 @@
           <div class="info-box  mb-4">
             <i class="bx bx-phone-call"></i>
             <h3>Call Us</h3>
-            <p>+1 5589 55488 55</p>
+            <p>(022) 7565909</p>
           </div>
         </div>
 
@@ -119,7 +119,7 @@
       <div class="row" data-aos="fade-up" data-aos-delay="100">
 
         <div class="col-lg-6 ">
-          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.775776528775!2d107.6712909!3d-6.9568431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeba41fbacd734650!2sSMA%20Negeri%2021%20Bandung!5e0!3m2!1sen!2sid!4v1668838675064!5m2!1sen!2sid" width="600" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
         </div>
 
         <div class="col-lg-6">
