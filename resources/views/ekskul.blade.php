@@ -60,8 +60,8 @@
           <li><a class="nav-link scrollto " href="ppdb">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
           <li><a class="nav-link scrollto" href="kontak">Kontak</a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto" href="tel:0227565909"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto" href="mailto:sman21bdg@yahoo.co.id" target="_blank""><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,7 +72,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" style="height: 40vh">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 style="font-size: 90px">EKSTRAKULIKULER</h1>
+      <h1>EKSTRAKULIKULER</h1>
       <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
     </div>
   </section><!-- End Hero -->
@@ -113,55 +113,12 @@
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
       </div>
 
     </div>
   </section><!-- End Services Section -->
 
-  <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container" data-aos="zoom-in">
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-  </section><!-- End Testimonials Section -->
+</main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">

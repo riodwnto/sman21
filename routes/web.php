@@ -48,3 +48,7 @@ Route::get('ppdb', function () {
 Route::get('kontak', function () {
     return view('kontak');
 });
+
+Route::get('isiberita', function () {
+    return view('isiberita');
+});

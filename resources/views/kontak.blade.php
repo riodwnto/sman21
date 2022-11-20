@@ -42,7 +42,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">Home</a></li>
-          <li class="dropdown"><a class="nav-link scrollto active" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="sejarah">Sejarah</a></li>
               <li><a href="visimisi">Visi dan Misi</a></li>
@@ -59,9 +59,9 @@
           <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
           <li><a class="nav-link scrollto " href="ppdb">PPDB</a></li>
           <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
-          <li><a class="nav-link scrollto" href="kontak">Kontak</a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
-          <li><a class="nav-link scrollto" href="#"><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto active" href="kontak">Kontak</a></li>
+          <li><a class="nav-link scrollto" href="tel:0227565909"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
+          <li><a class="nav-link scrollto" href="mailto:sman21bdg@yahoo.co.id" target="_blank""><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,100 +72,87 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center" style="height: 40vh">
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <h1 style="font-size: 90px">DIREKTORI GURU</h1>
+    <h1>KONTAK</h1>
     <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
   </div>
 </section><!-- End Hero -->
 
 <main id="main">
 
-  <!-- ======= About Section ======= -->
-  <section id="team" class="team section-bg">
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Direktori Guru</h2>
-        <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
+        <h2>Contact</h2>
+        <h3><span>Contact Us</span></h3>
         <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
 
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-            </div>
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>Our Address</h3>
+            <p>Jl. Manjahlega No.30, Margasari, Kec. Buahbatu, Kota Bandung, Jawa Barat 40286</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Us</h3>
+            <p>sman21bdg@yahoo.co.id</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Us</h3>
+            <p>(022) 7565909</p>
           </div>
         </div>
 
       </div>
-  </div>
-</section><!-- End About Section -->
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-lg-6 ">
+          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.775776528775!2d107.6712909!3d-6.9568431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeba41fbacd734650!2sSMA%20Negeri%2021%20Bandung!5e0!3m2!1sen!2sid!4v1668838675064!5m2!1sen!2sid" width="600" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->  
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
