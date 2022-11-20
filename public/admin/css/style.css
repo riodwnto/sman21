@@ -1,0 +1,37 @@
+.a-breadcrumbs {
+    color: #A1ACB8;
+}
+
+.a-breadcrumbs:hover {
+    color: #566A7F;
+}
+
+.summernote {
+    border-radius: 5px !important;
+}
+
+.border-custom {
+    border: 1px solid rgba(10, 10, 10, 0.075) !important;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 10px 0px;
+}
+
+.border-custom .btn-custom-border {
+    margin-bottom: -8px;
+}
+
+.limit-chars{
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+}
+
+.image-center {
+    width: 10px;
+}
+
+.icon-dasboard {
+    font-size: 30px !important;
+}
