@@ -24,7 +24,7 @@ class AdminController extends Controller
         $countgallery = Galeri::vgaleri()->count();
         $countorganization = Organisasi::count();
         $countcurriculum = Kurikulum::count();
-        $countuser = Akun::count();
+        $countuser = User::count();
         $countervisits = Counter::getCounterData();
 
         return view('admin.index', [

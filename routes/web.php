@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,6 +51,19 @@ Route::get('kontak', function () {
     return view('kontak');
 });
 
+Route::get('showmore', function () {
+    return view('showmore');
+});
+
 Route::get('isiberita', function () {
     return view('isiberita');
 });
+
+//Admin : Login Page
+Route::get('/login', [AdminController::class, 'login'])->name('login')->middleware('guest');
+
+//Admin : Verify Login
+Route::post('/login', [AkunController::class, 'login'])->middleware('guest');
+
+//Admin : Logout
+Route::get('/logout', [AkunController::class, 'logout'])->middleware('auth');
