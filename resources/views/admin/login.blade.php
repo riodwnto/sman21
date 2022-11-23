@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>{{ $title }} | Website Administrator Informatika Itenas</title>
+    <title>{{ $title }} | Administrator SMA Negeri 21 Bandung</title>
 
     <meta name="description" content="" />
 
@@ -77,7 +77,7 @@
               <div class="app-brand justify-content-center">
                 <a href="/" class="app-brand-link gap-2">
                   <img src="{{ asset('main/img/logo-icon.ico') }}" alt="">
-                  <span class="app-brand-text demo text-body fw-bolder">Informatika Itenas</span>
+                  <span class="fw-bolder" style="font-size: 24px">SMA NEGERI 21 BANDUNG</span>
                 </a>
               </div>
               @if (Session::has('message'))
