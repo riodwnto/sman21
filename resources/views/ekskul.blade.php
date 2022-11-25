@@ -88,7 +88,8 @@
         <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
         <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
-
+      
+      <!-- ===== slide show ===== -->
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
@@ -114,7 +115,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section><!-- End Services Section -->
 

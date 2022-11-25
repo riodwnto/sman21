@@ -90,21 +90,20 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Berita Terkini</h2>
+          <h2>Isi Berita</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Berita Terkini</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="showmore">Berita Terkini</a></li>
+            <li>Isi Berita</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
-
+    
     <section class="inner-page">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <p>Isi Berita</p>
       </div>
     </section>
 

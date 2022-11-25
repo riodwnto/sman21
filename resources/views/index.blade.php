@@ -212,7 +212,7 @@
         </div>
 
         <div class="d-flex justify-content-center">
-          <a href="isiberita" class="btn btn-outline-dark">Show More</a>
+          <a href="showmore" class="btn btn-outline-dark">Show More</a>
         </div>
 
       </div>
