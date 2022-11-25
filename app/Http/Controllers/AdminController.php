@@ -17,26 +17,25 @@ use App\Models\MahasiswaPrestasi;
 class AdminController extends Controller
 {
     public function index() {
-        $countactivity = Berita::count();
-        $countinformation = Tentang::count();
-        $countlecturer = Dosen::count();
-        $countcategory = Galeri::kategori()->count();
-        $countgallery = Galeri::vgaleri()->count();
-        $countorganization = Organisasi::count();
-        $countcurriculum = Kurikulum::count();
+        // $countberita = Berita::count();
+        // $countlecturer = Dosen::count();
+        // $countcategory = Galeri::kategori()->count();
+        // $countgallery = Galeri::vgaleri()->count();
+        // $countorganization = Organisasi::count();
+        // $countcurriculum = Kurikulum::count();
         $countuser = User::count();
         $countervisits = Counter::getCounterData();
 
         return view('admin.index', [
             'title' => "Beranda",
             'menu' => "home",
-            'activity_count' => $countactivity,
-            'information_count' => $countinformation,
-            'lecturer_count' => $countlecturer,
-            'category_count' => $countcategory,
-            'gallery_count' => $countgallery,
-            'organization_count' => $countorganization,
-            'curriculum_count' => $countcurriculum,
+            // 'berita_count' => $countberita,
+            // 'information_count' => $countinformation,
+            // 'lecturer_count' => $countlecturer,
+            // 'category_count' => $countcategory,
+            // 'gallery_count' => $countgallery,
+            // 'organization_count' => $countorganization,
+            // 'curriculum_count' => $countcurriculum,
             'user_count' => $countuser,
             'countervisit' => $countervisits,
         ]);
@@ -141,23 +140,23 @@ class AdminController extends Controller
         ]);
     }
 
-    //Activity Controller 
+    //Berita Controller 
 
-    public function activity() {
-        $activity = Berita::paginate(8);
+    public function berita() {
+        $berita = Berita::paginate(8);
 
-        return view('admin.activity', [
-            'menu' => "kegiatan",
-            'title' => 'Data Agenda Kegiatan',
-            'activity' => $activity,
+        return view('admin.berita', [
+            'menu' => "berita",
+            'title' => 'Data Berita Terkini',
+            'berita' => $berita,
         ]);
     }
 
-    public function activity_new() {
+    public function berita_new() {
 
-        return view('admin.activity_new', [
-            'menu' => "kegiatan",
-            'title' => 'Data Agenda Kegiatan Baru'
+        return view('admin.berita_new', [
+            'menu' => "berita",
+            'title' => 'Data Berita Terkini Baru'
         ]);
     }
 

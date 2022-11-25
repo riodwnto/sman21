@@ -10,13 +10,18 @@ class Berita extends Model
     use HasFactory;
 
     protected $table = 'berita';
+    protected $primaryKey = 'id_berita';
+    protected $keyType = 'string';
 
     protected $fillable = [
+        'id_berita',
         'judul',
         'isi',
         'sampul',
         'url_slug'
     ];
+
+    public $incrementing = false;
 
     public static function deleteImage($id) {
         $id = Berita::where('id_berita', $id)->get();

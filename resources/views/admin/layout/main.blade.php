@@ -42,7 +42,7 @@ $session = decrypt(Session::get('auth'));
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>{{ $title }} | Website Administrator Informatika Itenas</title>
+    <title>{{ $title }} | Website Administrator SMA Negeri 21 Bandung</title>
 
     <meta name="description" content="" />
 

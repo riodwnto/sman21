@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class BeritaController extends Controller
 {
-    public function activity_submit(Request $request) {
+    public function berita_submit(Request $request) {
         $img = $request->foto;
 
         if (is_null($img)) {
@@ -39,25 +39,25 @@ class BeritaController extends Controller
         $query = Berita::create($validated);
 
         if ($query == true) {
-            return redirect('/admin-area/agenda-kegiatan')->with('success', 'Berhasil menambahkan berita.');
+            return redirect('/admin-area/berita-terkini')->with('success', 'Berhasil menambahkan berita.');
         } else {
-            return redirect('/admin-area/agenda-kegiatan')->with('error', 'Terjadi kesalahan dalam menambahkan berita.');
+            return redirect('/admin-area/berita-terkini')->with('error', 'Terjadi kesalahan dalam menambahkan berita.');
         }
     }
 
-    public function activity_edit($id) {
-        $activity = Berita::where('id_berita', decrypt($id))->get();
+    public function berita_edit($id) {
+        $berita = Berita::where('id_berita', decrypt($id))->get();
 
-        return view('admin.activity_edit', [
+        return view('admin.berita_edit', [
             'title' => 'Edit Data Informasi Umum',
             'menu' => 'kegiatan',
-            'activity' => $activity,
+            'berita' => $berita,
         ]);
     }
 
-    public function activity_update(Request $request) {
+    public function berita_update(Request $request) {
         $img = $request->foto;
-        $check = Berita::where('id_berita', '!=', $request->id_kegiatan)->get();
+        $check = Berita::where('id_berita', '!=', $request->id_berita)->get();
 
         foreach ($check as $data) {
             if ($data -> judul == $request -> judul) {
@@ -67,7 +67,7 @@ class BeritaController extends Controller
 
         if ($img != null) {
             $imgext = $request->foto->extension();
-            $imgname = time().'-'.$request -> id_kegiatan.'.'.$imgext;
+            $imgname = time().'-'.$request -> id_berita.'.'.$imgext;
 
             $request->merge([
                 'url_slug' => Berita::generateSlug($request->judul),
@@ -81,10 +81,10 @@ class BeritaController extends Controller
                 'url_slug' => 'required'
             ]);
 
-            Berita::deleteImage($request->id_kegiatan);
+            Berita::deleteImage($request->id_berita);
             $img->move(public_path('/img/information'), $imgname);
 
-            $query = Berita::where('id_berita', $request -> id_kegiatan)->update($validated);
+            $query = Berita::where('id_berita', $request -> id_berita)->update($validated);
         } else {
             $request->merge([
                 'url_slug' => Berita::generateSlug($request->judul)
@@ -96,34 +96,34 @@ class BeritaController extends Controller
                 'url_slug' => 'required'
             ]);
 
-            $query = Berita::where('id_berita', $request -> id_kegiatan)->update($validated);
+            $query = Berita::where('id_berita', $request -> id_berita)->update($validated);
 
             
         }
 
         if ($query == true) {
-            return redirect('/admin-area/agenda-kegiatan')->with('success', 'Berhasil mengedit berita.');
+            return redirect('/admin-area/berita-terkini')->with('success', 'Berhasil mengedit berita.');
         } else {
-            return redirect('/admin-area/agenda-kegiatan')->with('error', 'Terjadi kesalahan dalam mengedit berita.');
+            return redirect('/admin-area/berita-terkini')->with('error', 'Terjadi kesalahan dalam mengedit berita.');
         }
     }
 
-    public function activity_delete($id) {
+    public function berita_delete($id) {
         $query = Berita::destroy(decrypt($id));
 
         if ($query == true) {
             Berita::deleteImage(decrypt($id));
 
-            return redirect('/admin-area/agenda-kegiatan')->with('success', 'Berhasil menghapus berita.');
+            return redirect('/admin-area/berita-terkini')->with('success', 'Berhasil menghapus berita.');
         } else {
-            return redirect('/admin-area/agenda-kegiatan')->with('error', 'Terjadi kesalahan dalam menghapus berita.');
+            return redirect('/admin-area/berita-terkini')->with('error', 'Terjadi kesalahan dalam menghapus berita.');
         }
     }
 
-    public function activity_search(Request $request) {
+    public function berita_search(Request $request) {
         $url = $request->getPathInfo();
 
-        if ($url == '/admin-area/agenda-kegiatan') {
+        if ($url == '/admin-area/berita-terkini') {
             $request->merge([
                 'judul' => '%'.$request->cari.'%',
             ]);
@@ -138,10 +138,10 @@ class BeritaController extends Controller
                 if (count($query) == 0) {
                     return redirect()->back()->with('message', 'Berita tidak ditemukan.');
                 } else {
-                    return view('admin.activity', [
+                    return view('admin.berita', [
                         'title' => 'Hasil Pencarian Berita : '.$request->judul,
                         'menu' => 'kegiatan',
-                        'activity' => $query,
+                        'berita' => $query,
                     ]);
                 }
             } else {

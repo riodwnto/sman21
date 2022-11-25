@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('ekskul', function (Blueprint $table) {
-            $table->bigIncrements('id_ekskul');
+            $table->string('id_ekskul');
             $table->string("judul", 255);
             $table->text("foto");
             $table->timestamps();

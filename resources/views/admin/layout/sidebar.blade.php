@@ -26,86 +26,53 @@
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Berita</span>
+            <span class="menu-header-text">Home</span>
         </li>
 
-        <li class="menu-item @if ($menu == 'kegiatan') active @endif">
-            <a href="/admin-area/agenda-kegiatan" class="menu-link">
+        <li class="menu-item @if ($menu == 'berita') active @endif">
+            <a href="/admin-area/berita-terkini" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-task"></i>
-                Agenda Kegiatan
+                Berita Terkini
             </a>
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Menu Tentang</span>
+            <span class="menu-header-text">Profil</span>
         </li>
 
-        <li class="menu-item @if ($menu == 'informasi') active @endif">
-            <a href="/admin-area/informasi-umum" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-info-circle"></i>
-                Informasi Umum
-            </a>
-        </li>
-
-        <li class="menu-item @if ($menu == 'dosen') active @endif">
-            <a href="/admin-area/dosen-pengajar" class="menu-link">
+        <li class="menu-item @if ($menu == 'guru') active @endif">
+            <a href="/admin-area/direktori-guru" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-group"></i>
-                Dosen Pengajar
+                Direktori Guru
             </a>
         </li>
 
-        <li class="menu-item @if (($menu == 'galeri') || ($menu == 'kategori')) active open @endif">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-image"></i>
-                <div>Galeri</div>
-            </a>
-
-            <ul class="menu-sub">
-                <li class="menu-item @if ($menu == 'galeri') active @endif">
-                    <a href="/admin-area/galeri" class="menu-link">
-                        <div>Galeri</div>
-                    </a>
-                </li>
-                <li class="menu-item @if ($menu == 'kategori') active @endif">
-                    <a href="/admin-area/kategori-galeri" class="menu-link">
-                        <div>Kategori</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="menu-item @if ($menu == 'organisasi') active @endif">
-            <a href="/admin-area/struktur-organisasi" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-list-ol"></i>
-                Struktur Organisasi
+        <li class="menu-item @if ($menu == 'tu') active @endif">
+            <a href="/admin-area/direktori-tata-usaha" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-group"></i>
+                Direktori Tata Usaha
             </a>
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Menu Akademik</span>
+            <span class="menu-header-text">Ekstrakulikuler</span>
         </li>
 
-        <li class="menu-item @if ($menu == 'kurikulum') active @endif">
-            <a href="/admin-area/kurikulum" class="menu-link">
+        <li class="menu-item @if ($menu == 'ekskul') active @endif">
+            <a href="/admin-area/data-ekstrakulikuler" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-book"></i>
-                Kurikulum
-            </a>
-        </li>
-
-        <li class="menu-item @if ($menu == 'prestasi_akademik') active @endif">
-            <a href="/admin-area/prestasi-akademik" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-trophy"></i>
-                Prestasi Akademik
+                Data Ekstrakulikuler
             </a>
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Menu Pengguna</span>
+            <span class="menu-header-text">Admin</span>
         </li>
 
-        <li class="menu-item @if ($menu == 'pengguna') active @endif">
-            <a href="/admin-area/akun" class="menu-link">
+        <li class="menu-item @if ($menu == 'admin') active @endif">
+            <a href="/admin-area/admin" class="menu-link">
                 <i class='menu-icon tf-icons bx bxs-user-account' ></i>
-                Data Pengguna
+                Data Admin
             </a>
         </li>
     </ul>
