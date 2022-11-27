@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\Berita;
 // use App\Models\Dosen;
 use App\Models\Guru;
-use App\Models\Tentang;
-use App\Models\Galeri;
-use App\Models\Kurikulum;
-use App\Models\Organisasi;
+// use App\Models\Tentang;
+// use App\Models\Galeri;
+// use App\Models\Kurikulum;
+// use App\Models\Organisasi;
 use App\Models\Akun;
 use App\Models\User;
 use App\Models\Counter;
-use App\Models\MahasiswaPrestasi;
+// use App\Models\MahasiswaPrestasi;
 
 class AdminController extends Controller
 {
@@ -45,7 +45,7 @@ class AdminController extends Controller
     //Guru Page
 
     public function guru() {
-        $guru = Guru::vguru()->paginate(8);
+        $guru = Guru::paginate(8);
 
         return view('admin.guru', [
             'title' => "Data Guru",
@@ -161,15 +161,15 @@ class AdminController extends Controller
         ]);
     }
 
-    public function about() {
-        $about = Tentang::get();
+    // public function about() {
+    //     $about = Tentang::get();
 
-        return view('admin.about', [
-            'menu' => "informasi",
-            'title' => 'Data Informasi Umum',
-            'about' => $about,
-        ]);
-    }
+    //     return view('admin.about', [
+    //         'menu' => "informasi",
+    //         'title' => 'Data Informasi Umum',
+    //         'about' => $about,
+    //     ]);
+    // }
 
     public function account() {
         $account = User::paginate(20);
@@ -194,20 +194,20 @@ class AdminController extends Controller
         ]);
     }
 
-    public function achievement() {
-        $mhs = MahasiswaPrestasi::paginate(8);
+    // public function achievement() {
+    //     $mhs = MahasiswaPrestasi::paginate(8);
 
-        return view('admin.achievement', [
-            'title' => 'Data Prestasi Akademik',
-            'menu' => 'prestasi_akademik',
-            'mhs' => $mhs
-        ]);
-    }
+    //     return view('admin.achievement', [
+    //         'title' => 'Data Prestasi Akademik',
+    //         'menu' => 'prestasi_akademik',
+    //         'mhs' => $mhs
+    //     ]);
+    // }
 
-    public function achievement_new() {
-        return view('admin.achievement_new', [
-            'title' => 'Data Prestasi Akademik Baru',
-            'menu' => 'prestasi_akademik',
-        ]);
-    }
+    // public function achievement_new() {
+    //     return view('admin.achievement_new', [
+    //         'title' => 'Data Prestasi Akademik Baru',
+    //         'menu' => 'prestasi_akademik',
+    //     ]);
+    // }
 }

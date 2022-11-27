@@ -7,172 +7,109 @@ use App\Models\Guru;
 
 class GuruController extends Controller
 {
-    public function lecturer_submit(Request $request) {        
+    public function guru_submit(Request $request) {        
         $img = $request->foto;
+        $id_guru = Guru::generateID();
 
         if ($img != null) {
             $imgext = $request->foto->extension();
-            $imgname = time().'-'.$request->nidn.'.'.$imgext;
+            $imgname = time().'-'.$id_guru.'.'.$imgext;
         } else {
             $imgname = null;
         }
 
         $request->merge([
-            'images' => $imgname,
+            'foto' => $imgname,
+            'id_guru' => $id_guru
         ]);
 
-        $dosen = $request->validate([
-            'nidn' => 'required|unique:dosen|max:15',
-            'nama_dosen' => 'required|max:70',
-            'keahlian' => 'required',
-            'matkul' => 'required',
-            'images' => 'required'
+        $guru = $request->validate([
+            'id_guru' => 'required|unique:dirgu|max:10',
+            'nip' => 'required|max:20',
+            'nama' => 'required|max:70',
+            'matpel' => 'required',
+            'foto' => 'required'
         ]);
 
-        $pd_dosen = $request->validate([
-            'nidn' => 'required|unique:dosen|max:15',
-            's1' => 'nullable|max:150',
-            's2' => 'nullable|max:150',
-            's3' => 'nullable|max:150',
-        ]);
-
-        $pub_dosen = $request->validate([
-            'nidn' => 'required|unique:dosen|max:15',
-            'data_publikasi' => 'nullable',
-        ]);
-
-        $ref_dosen = $request->validate([
-            'nidn' => 'required|unique:dosen|max:15',
-            'google_scholar' => 'nullable|max:50',
-            'shinta' => 'nullable|max:50',
-            'scopus' => 'nullable|max:50',
-        ]);
+        $guru['foto'] = $imgname;
 
         $img->move(public_path('/img'), $imgname);
 
-        $query = Dosen::insert($dosen);
-        $query1 = Dosen::pendidikan_dosen()->insert($pd_dosen);
-        $query2 = Dosen::publikasi_dosen()->insert($pub_dosen);
-        $query3 = Dosen::referensi_dosen()->insert($ref_dosen);
+        $query = Guru::insert($guru);
 
-        if (($query == true) && ($query1 == true) && ($query2 == true) && ($query3 == true)) {
-            return redirect('/admin-area/dosen-pengajar')->with('success', 'Berhasil menambahkan data dosen.');
+        if ($query == true) {
+            return redirect('/admin-area/dirgu')->with('success', 'Berhasil menambahkan data guru.');
         } else {
-            return redirect('/admin-area/dosen-pengajar')->with('error', 'Terjadi kesalahan dalam menambahkan data dosen.');
+            return redirect('/admin-area/dirgu')->with('error', 'Terjadi kesalahan dalam menambahkan data guru.');
         }
     }
 
-    public function lecturer_edit($id) {
+    public function guru_edit($id) {
         //Get data from 4 table
-        $lecturer = Dosen::where('nidn', decrypt($id))->get();
-        $lecturer_degree = Dosen::pendidikan_dosen()->where('nidn', decrypt($id))->get();
-        $lecturer_publication = Dosen::publikasi_dosen()->where('nidn', decrypt($id))->get();
-        $lecturer_reference = Dosen::referensi_dosen()->where('nidn', decrypt($id))->get();
+        $guru = Guru::where('id_guru', decrypt($id))->get();
 
         //Send result to view 
-        return view('admin.lecturer_edit', [
-            'lecturer' => $lecturer,
-            'lecturer_degree' => $lecturer_degree,
-            'lecturer_publication' => $lecturer_publication,
-            'lecturer_reference' => $lecturer_reference,
-            'title' => 'Edit Data Dosen',
-            'menu' => 'dosen'
+        return view('admin.guru_edit', [
+            'guru' => $guru,
+            'title' => 'Edit Data Guru',
+            'menu' => 'guru'
         ]);
     }
 
-    public function lecturer_delete($id) {
-        Dosen::deleteImage(decrypt($id));
+    public function guru_delete($id) {
+        Guru::deleteImage(decrypt($id));
 
-        $query = Dosen::referensi_dosen()->where('nidn', decrypt($id))->delete();
-        $query1 = Dosen::publikasi_dosen()->where('nidn', decrypt($id))->delete();
-        $query2 = Dosen::pendidikan_dosen()->where('nidn', decrypt($id))->delete();
-        $query3 = Dosen::where('nidn', decrypt($id))->delete();
+        $query = Guru::where('id_guru', decrypt($id))->delete();
 
-		if (($query == true) && ($query1 == true) && ($query2 == true) && ($query3 == true)) {
-            return redirect('/admin-area/dosen-pengajar')->with('success', 'Berhasil menghapus data dosen.');
+		if ($query == true) {
+            return redirect('/admin-area/dirgu')->with('success', 'Berhasil menghapus data guru.');
         } else {
-            return redirect('/admin-area/dosen-pengajar')->with('error', 'Terjadi kesalahan dalam menghapus data dosen.');
+            return redirect('/admin-area/dirgu')->with('error', 'Terjadi kesalahan dalam menghapus data guru.');
         }
 	}
 
-    public function lecturer_update(Request $request) {        
+    public function guru_update(Request $request) {        
         $img = $request->foto;
 
         if ($img != null) {
             $imgext = $request->foto->extension();
-            $imgname = time().'-'.$request->nidn.'.'.$imgext;
+            $imgname = time().'-'.$request->id_guru.'.'.$imgext;
 
             $request->merge([
-                'images' => $imgname,
+                'foto' => $imgname,
             ]);
     
-            $dosen = $request->validate([
-                'nama_dosen' => 'required|max:70',
-                'keahlian' => 'required',
-                'matkul' => 'required',
-                'images' => 'required'
-            ]);
-    
-            $pd_dosen = $request->validate([
-                's1' => 'nullable|max:150',
-                's2' => 'nullable|max:150',
-                's3' => 'nullable|max:150',
-            ]);
-    
-            $pub_dosen = $request->validate([
-                'data_publikasi' => 'nullable',
-            ]);
-    
-            $ref_dosen = $request->validate([
-                'google_scholar' => 'nullable|max:50',
-                'shinta' => 'nullable|max:50',
-                'scopus' => 'nullable|max:50',
+            $guru = $request->validate([
+                'nip' => 'required|max:20',
+                'nama' => 'required|max:70',
+                'matpel' => 'required',
+                'foto' => 'required'
             ]);
 
-            Dosen::deleteImage($request->nidn);
+            $guru['foto'] = $imgname;
+
+            Guru::deleteImage($request->id_guru);
             $img->move(public_path('/img'), $imgname);
 
-            $query = Dosen::where('nidn', $request->nidn)->update($dosen);
-            $query1 = Dosen::pendidikan_dosen()->where('nidn', $request->nidn)->update($pd_dosen);
-            $query2 = Dosen::publikasi_dosen()->where('nidn', $request->nidn)->update($pub_dosen);
-            $query3 = Dosen::referensi_dosen()->where('nidn', $request->nidn)->update($ref_dosen);
+            $query = Guru::where('id_guru', $request->id_guru)->update($guru);
         } else {
-            $dosen = $request->validate([
-                'nama_dosen' => 'required|max:70',
-                'keahlian' => 'required',
-                'matkul' => 'required'
-            ]);
-    
-            $pd_dosen = $request->validate([
-                's1' => 'nullable|max:150',
-                's2' => 'nullable|max:150',
-                's3' => 'nullable|max:150',
-            ]);
-    
-            $pub_dosen = $request->validate([
-                'data_publikasi' => 'nullable',
-            ]);
-    
-            $ref_dosen = $request->validate([
-                'google_scholar' => 'nullable|max:50',
-                'shinta' => 'nullable|max:50',
-                'scopus' => 'nullable|max:50',
+            $guru = $request->validate([
+                'nip' => 'required|max:20',
+                'nama' => 'required|max:70',
+                'matpel' => 'required',
             ]);
 
-            $query = Dosen::where('nidn', $request->nidn)->update($dosen);       
-            $query1 = Dosen::pendidikan_dosen()->where('nidn', $request->nidn)->update($pd_dosen);
-            $query2 = Dosen::publikasi_dosen()->where('nidn', $request->nidn)->update($pub_dosen);
-            $query3 = Dosen::referensi_dosen()->where('nidn', $request->nidn)->update($ref_dosen);
+            $query = Guru::where('id_guru', $request->id_guru)->update($guru);     
         }
 
-        if (($query == true) || ($query1 == true) || ($query2 == true) || ($query3 == true)) {
-            return redirect('/admin-area/dosen-pengajar')->with('success', 'Berhasil mengedit data dosen.');
+        if ($query == true) {
+            return redirect('/admin-area/dirgu')->with('success', 'Berhasil mengedit data guru.');
         } else {
-            return redirect('/admin-area/dosen-pengajar')->with('error', 'Terjadi kesalahan dalam mengedit data dosen.');
+            return redirect('/admin-area/dirgu')->with('error', 'Terjadi kesalahan dalam mengedit data guru.');
         }
     }
 
-    public function lecturer_search(Request $request) {
+    public function guru_search(Request $request) {
         $request->merge([
             'cari' => '%'.$request->cari.'%',
         ]);
@@ -181,16 +118,16 @@ class GuruController extends Controller
             'cari' => 'required',
         ]);
 
-        $query = Dosen::vdosen()->where('nidn', 'like',$validated)->orWhere('nama_dosen', 'like',$validated)->orWhere('keahlian', 'like',$validated)->paginate(8);
+        $query = Guru::where('id_guru', 'like',$validated)->orWhere('nama', 'like',$validated)->orWhere('matpel', 'like',$validated)->paginate(8);
 
         if ($query == true) {
             if (count($query) == 0) {
-                return redirect()->back()->with('message', 'Data dosen tidak ditemukan.');
+                return redirect()->back()->with('message', 'Data guru tidak ditemukan.');
             } else {
-                return view('admin.lecturer', [
+                return view('admin.guru', [
                     'title' => 'Hasil Pencarian : '.$request->cari,
-                    'menu' => 'dosen',
-                    'dosen' => $query,
+                    'menu' => 'guru',
+                    'guru' => $query,
                 ]);
             }
         } else {

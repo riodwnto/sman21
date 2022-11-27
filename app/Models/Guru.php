@@ -23,15 +23,9 @@ class Guru extends Model
     ];
     
     public $incrementing = false;
-    public $timestamps = false;
-
-    public static function vguru() {
-        $query = DB::table('vguru');
-        return $query;
-    }
 
     public static function deleteImage($id) {
-        $id = Dosen::where('nidn', $id)->get();
+        $id = Guru::where('id_guru', $id)->get();
 
         $count = count($id);
 
@@ -39,7 +33,7 @@ class Guru extends Model
             $img = (String) $id[0] -> images;
             $filepath = public_path('/img/'.$img);
             if (file_exists($filepath)) {
-                unlink($filepath);
+                // unlink($filepath);
             }
         }
     }

@@ -43,11 +43,14 @@
         @foreach ($guru as $data)
         <div class="col-md-6 col-lg-3 mb-3">
             <div class="card h-100">
-                <img class="card-img-top" src="{{ asset('img/'.$data -> images) }}" alt="Card image cap" />
+                <img class="card-img-top" src="{{ asset('img/'.$data -> foto) }}" alt="Card image cap" />
                 <div class="card-body">
-                    <h5 class="card-title">{{ $data -> nama_guru }}</h5>
+                    <h5 class="card-title">{{ $data -> nama }}</h5>
                     <p class="card-text">
-                        {{ $data -> nidn }}
+                        {{ $data -> nip }}
+                    </p>
+                    <p class="card-text">
+                        {!! $data -> matpel !!}
                     </p>
                     <div class="row">
                         <div class="col-6">
@@ -59,11 +62,11 @@
                             <div class="text-end">
                                 <div class="btn-group btn-group-sm mb-4 text-right" role="group"
                                     aria-label="Small button group">
-                                    <a href="/admin-area/dirgu/edit/{{ Crypt::encrypt($data -> nidn) }}" class="btn btn-primary">
+                                    <a href="/admin-area/dirgu/edit/{{ Crypt::encrypt($data -> id_guru) }}" class="btn btn-primary">
                                         <i class="align-middle" data-feather="edit"></i>
                                         <span class="align-middle">Edit</span>
                                     </a>
-                                    <button onclick="if (confirm('Hapus data {{ $data -> nama_guru }}')) { location.replace('/admin-area/dirgu/delete/{{ Crypt::encrypt($data -> nidn) }}') }" class="btn btn-danger">
+                                    <button onclick="if (confirm('Hapus data {{ $data -> nama }}')) { location.replace('/admin-area/dirgu/delete/{{ Crypt::encrypt($data -> id_guru) }}') }" class="btn btn-danger">
                                         <i class="align-middle" data-feather="trash-2"></i>
                                         <span class="align-middle">Hapus</span>
                                     </button>
@@ -75,7 +78,7 @@
             </div>
         </div>
         @endforeach
-        {{ $dosen->links('admin.layout.pagination') }}
+        {{ $guru->links('admin.layout.pagination') }}
         @endif
     </div>
     <!-- Examples -->
