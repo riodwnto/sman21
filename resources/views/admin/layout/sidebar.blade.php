@@ -41,14 +41,14 @@
         </li>
 
         <li class="menu-item @if ($menu == 'guru') active @endif">
-            <a href="/admin-area/direktori-guru" class="menu-link">
+            <a href="/admin-area/dirgu" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-group"></i>
                 Direktori Guru
             </a>
         </li>
 
         <li class="menu-item @if ($menu == 'tu') active @endif">
-            <a href="/admin-area/direktori-tata-usaha" class="menu-link">
+            <a href="/admin-area/dirtu" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-group"></i>
                 Direktori Tata Usaha
             </a>

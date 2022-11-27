@@ -74,47 +74,47 @@ Route::get('/logout', [AkunController::class, 'logout'])->middleware('auth');
 //Admin : Main Page
 Route::get('/admin-area', [AdminController::class, 'index'])->middleware('auth');
 
-//Admin : Activity
+//Admin : Berita
 Route::get('/admin-area/berita-terkini', [AdminController::class, 'berita'])->middleware('auth');
 
-//Admin : Activity -> Search
+//Admin : Berita -> Search
 Route::post('/admin-area/berita-terkini', [BeritaController::class, 'berita_search'])->middleware('auth');
 
-//Admin : Activity -> New Data
+//Admin : Berita -> New Data
 Route::get('/admin-area/berita-terkini/new', [AdminController::class, 'berita_new'])->middleware('auth');
 
-//Admin : Activity -> Submit
+//Admin : Berita -> Submit
 Route::post('/admin-area/berita-terkini/submit', [BeritaController::class, 'berita_submit'])->middleware('auth');
 
-//Admin : Activity -> Edit Form
+//Admin : Berita -> Edit Form
 Route::get('/admin-area/berita-terkini/edit/{id}', [BeritaController::class, 'berita_edit'])->middleware('auth');
 
-//Admin : Activity -> Edit Data
+//Admin : Berita -> Edit Data
 Route::post('/admin-area/berita-terkini/edit/update', [BeritaController::class, 'berita_update'])->middleware('auth');
 
-//Admin : Activity -> Delete Data
+//Admin : Berita -> Delete Data
 Route::get('/admin-area/berita-terkini/delete/{id}', [BeritaController::class, 'berita_delete'])->middleware('auth');
 
-// //Admin : Lecturer Page
-// Route::get('/admin-area/dosen-pengajar', [AdminController::class, 'lecturer'])->middleware('auth');
+//Admin : Guru Page
+Route::get('/admin-area/dirgu', [AdminController::class, 'guru'])->middleware('auth');
 
-// //Admin : Lecturer Page -> Search
-// Route::post('/admin-area/dosen-pengajar', [DosenController::class, 'lecturer_search'])->middleware('auth');
+//Admin : Guru Page -> Search
+Route::post('/admin-area/dirgu', [GuruController::class, 'guru_search'])->middleware('auth');
 
-// //Admin : Lecturer Page -> New Form
-// Route::get('/admin-area/dosen-pengajar/new', [AdminController::class, 'lecturer_new'])->middleware('auth');
+//Admin : Guru Page -> New Form
+Route::get('/admin-area/dirgu/new', [GuruController::class, 'guru_new'])->middleware('auth');
 
-// //Admin : Lecturer Page -> Submit
-// Route::post('/admin-area/dosen-pengajar/submit', [DosenController::class, 'lecturer_submit'])->middleware('auth');
+//Admin : Guru Page -> Submit
+Route::post('/admin-area/dirgu/submit', [GuruController::class, 'guru_submit'])->middleware('auth');
 
-// //Admin : Lecturer Page -> Edit Form
-// Route::get('/admin-area/dosen-pengajar/edit/{id}', [DosenController::class, 'lecturer_edit'])->middleware('auth');
+//Admin : Guru Page -> Edit Form
+Route::get('/admin-area/dirgu/edit/{id}', [GuruController::class, 'guru_edit'])->middleware('auth');
 
-// //Admin : Lecturer Page -> Edit Data
-// Route::post('/admin-area/dosen-pengajar/edit/update', [DosenController::class, 'lecturer_update'])->middleware('auth');
+//Admin : Guru Page -> Edit Data
+Route::post('/admin-area/dirgu/edit/update', [GuruController::class, 'guru_update'])->middleware('auth');
 
-// //Admin : Lecturer Page -> Delete Data
-// Route::get('/admin-area/dosen-pengajar/delete/{id}', [DosenController::class, 'lecturer_delete'])->middleware('auth');
+//Admin : Guru Page -> Delete Data
+Route::get('/admin-area/dirgu/delete/{id}', [GuruController::class, 'guru_delete'])->middleware('auth');
 
 // //Admin : Gallery Page
 // Route::get('/admin-area/galeri', [AdminController::class, 'gallery'])->middleware('auth');

@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
-use App\Models\Dosen;
+// use App\Models\Dosen;
+use App\Models\Guru;
 use App\Models\Tentang;
 use App\Models\Galeri;
 use App\Models\Kurikulum;
@@ -41,104 +42,104 @@ class AdminController extends Controller
         ]);
     }
     
-    //Lecturer Page
+    //Guru Page
 
-    public function lecturer() {
-        $dosen = Dosen::vdosen()->paginate(8);
+    public function guru() {
+        $guru = Guru::vguru()->paginate(8);
 
-        return view('admin.lecturer', [
-            'title' => "Data Dosen",
-            'menu' => "dosen",
-            'dosen' => $dosen,
+        return view('admin.guru', [
+            'title' => "Data Guru",
+            'menu' => "guru",
+            'guru' => $guru,
         ]);
     }
 
-    public function lecturer_new() {
-        return view('admin.lecturer_new', [
-            'menu' => "dosen",
-            'title' => "Tambah Dosen Baru",
+    public function guru_new() {
+        return view('admin.guru_new', [
+            'menu' => "guru",
+            'title' => "Tambah Guru Baru",
         ]);
     }
 
-    //Gallery Controller 
+    // //Gallery Controller 
 
-    public function gallery() {
-        $gallery = Galeri::vgaleri()->paginate(8);
+    // public function gallery() {
+    //     $gallery = Galeri::vgaleri()->paginate(8);
 
-        return view('admin.gallery', [
-            'title' => "Galeri",
-            'menu' => "galeri",
-            'gallery' => $gallery,
-        ]);
-    }
+    //     return view('admin.gallery', [
+    //         'title' => "Galeri",
+    //         'menu' => "galeri",
+    //         'gallery' => $gallery,
+    //     ]);
+    // }
 
-    public function gallery_new() {
-        $category = Galeri::kategori()->get();
+    // public function gallery_new() {
+    //     $category = Galeri::kategori()->get();
 
-        return view('admin.gallery_new', [
-            'category' => $category,
-            'menu' => "galeri",
-            'title' => "Upload Foto Baru",
-        ]);
-    }
+    //     return view('admin.gallery_new', [
+    //         'category' => $category,
+    //         'menu' => "galeri",
+    //         'title' => "Upload Foto Baru",
+    //     ]);
+    // }
 
-    //Category Controller 
+    // //Category Controller 
 
-    public function gallery_category() {
-        $category = Galeri::kategori()->paginate(20);
+    // public function gallery_category() {
+    //     $category = Galeri::kategori()->paginate(20);
 
-        return view('admin.gallery_category', [
-            'category' => $category,
-            'menu' => "kategori",
-            'title' => "Kategori Foto"
-        ]);
-    }
+    //     return view('admin.gallery_category', [
+    //         'category' => $category,
+    //         'menu' => "kategori",
+    //         'title' => "Kategori Foto"
+    //     ]);
+    // }
 
-    public function gallery_category_new() {
+    // public function gallery_category_new() {
 
-        return view('admin.gallery_category_new', [
-            'menu' => "kategori",
-            'title' => "Kategori Foto Baru"
-        ]);
-    }
+    //     return view('admin.gallery_category_new', [
+    //         'menu' => "kategori",
+    //         'title' => "Kategori Foto Baru"
+    //     ]);
+    // }
 
-    //Organization Controller
+    // //Organization Controller
 
-    public function organization() {
-        $organization = Organisasi::get();
+    // public function organization() {
+    //     $organization = Organisasi::get();
 
-        return view('admin.organization', [
-            'title' => "Struktur Organisasi",
-            'menu' => "organisasi",
-            'organization' => $organization,
-        ]);
-    }
+    //     return view('admin.organization', [
+    //         'title' => "Struktur Organisasi",
+    //         'menu' => "organisasi",
+    //         'organization' => $organization,
+    //     ]);
+    // }
 
-    public function organization_new() {
-        return view('admin.organization_new', [
-            'menu' => "organisasi",
-            'title' => "Data Organisasi Baru"
-        ]);
-    }
+    // public function organization_new() {
+    //     return view('admin.organization_new', [
+    //         'menu' => "organisasi",
+    //         'title' => "Data Organisasi Baru"
+    //     ]);
+    // }
 
-    //Curriculum Controller
+    // //Curriculum Controller
 
-    public function curriculum() {
-        $curriculum = Kurikulum::paginate(20);
+    // public function curriculum() {
+    //     $curriculum = Kurikulum::paginate(20);
 
-        return view('admin.curriculum', [
-            'menu' => "kurikulum",
-            'title' => "Data Kurikulum",
-            'curriculum' => $curriculum,
-        ]);
-    }
+    //     return view('admin.curriculum', [
+    //         'menu' => "kurikulum",
+    //         'title' => "Data Kurikulum",
+    //         'curriculum' => $curriculum,
+    //     ]);
+    // }
 
-    public function curriculum_new() {
-        return view('admin.curriculum_new', [
-            'menu' => "kurikulum",
-            'title' => "Data Kurikulum Baru"
-        ]);
-    }
+    // public function curriculum_new() {
+    //     return view('admin.curriculum_new', [
+    //         'menu' => "kurikulum",
+    //         'title' => "Data Kurikulum Baru"
+    //     ]);
+    // }
 
     //Berita Controller 
 
