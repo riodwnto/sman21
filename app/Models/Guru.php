@@ -23,27 +23,12 @@ class Guru extends Model
     ];
     
     public $incrementing = false;
-    // public $timestamps = false;
+    public $timestamps = false;
 
-    // public static function vguru() {
-    //     $query = DB::table('vguru');
-    //     return $query;
-    // }
-
-    // public static function pendidikan_dosen() {
-    //     $query = DB::table('pendidikan_dosen');
-    //     return $query;
-    // }
-
-    // public static function publikasi_dosen() {
-    //     $query = DB::table('publikasi_dosen');
-    //     return $query;
-    // }
-
-    // public static function referensi_dosen() {
-    //     $query = DB::table('referensi_dosen');
-    //     return $query;
-    // }
+    public static function vguru() {
+        $query = DB::table('vguru');
+        return $query;
+    }
 
     public static function deleteImage($id) {
         $id = Dosen::where('nidn', $id)->get();
