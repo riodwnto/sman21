@@ -1,18 +1,17 @@
 @extends('admin.layout.main')
-
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="/admin-area" class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/dosen-pengajar"
-        class="a-breadcrumbs">Prestasi Akademik</a> / </span> Data Baru</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="/admin-area" class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/ekskul"
+        class="a-breadcrumbs">Data Ekstrakulikuler</a> / </span> Ekstrakulikuler Baru</h4>
     <div class="mb-3">
         <i class="text-middle" data-feather="file-plus"></i>
-        <h1 class="h3 d-inline align-middle">Form Prestasi Akademik Baru</h1>
+        <h1 class="h3 d-inline align-middle">Form Ekstrakulikuler Baru</h1>
     </div>
     <div class="row">
         <div class="col">
             <div class="card">
-                <form action="/admin-area/prestasi-akademik/submit" method="POST" enctype="multipart/form-data">
-                    @csrf
+                <form action="/admin-area/ekskul/submit" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="card-header">
                         <h5 class="card-title mb-0">Data Umum</h5>
                     </div>
@@ -20,20 +19,9 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
                                 <div class="mb-3">
-                                    <label class="form-label">NIM Mahasiswa</label>
-                                    <input type="number" name="nrp_mhs" class="form-control" placeholder="NIM Mahasiswa" value="{{ old('nrp_mhs') }}" required>
-                                    @error('nrp_mhs')
-                                    <div id="defaultFormControlHelp" class="form-text bg-warning text-black">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Nama Mahasiswa</label>
-                                    <input type="text" name="nama" class="form-control" placeholder="Nama Mahasiswa" value="{{ old('nama') }}" required>
-                                    @error('nama')
+                                    <label class="form-label">Judul Ekstrakulikuler</label>
+                                    <input type="text" name="judul" class="form-control" placeholder="Judul Ekstrakulikuler" value="{{ old('judul') }}" required>
+                                    @error('judul')
                                     <div id="defaultFormControlHelp" class="form-text bg-warning text-black">
                                         {{ $message }}
                                     </div>
@@ -60,7 +48,7 @@
                                                     <span class="d-none d-sm-block">Reset</span>
                                                 </button>
                                                 <p class="text-muted mb-0">Tipe file : .jpg atau .png. Ukuran maks 800KB</p>
-                                                @error('images')
+                                                @error('foto')
                                                 <div id="defaultFormControlHelp" class="form-text bg-warning text-black">
                                                     {{ $message }}
                                                 </div>
@@ -70,20 +58,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Data Prestasi Akademik</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <label class="form-label">Data Prestasi</label>
-                            <textarea name="prestasi" id="summernote">{{ old('prestasi') }}</textarea>
-                            @error('prestasi')
-                            <div id="defaultFormControlHelp" class="form-text bg-warning text-black">
-                                {{ $message }}
-                            </div>
-                            @enderror
                         </div>
                     </div>
                     <div class="card-body">
@@ -99,7 +73,7 @@
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="text-end">
-                                    <a class="btn btn-warning" href="/admin-area/dosen-pengajar">
+                                    <a class="btn btn-warning" href="/admin-area/ekskul">
                                         <span class="align-middle">Kembali</span>
                                     </a>
                                 </div>

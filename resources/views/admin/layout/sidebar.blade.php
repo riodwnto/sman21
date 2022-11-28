@@ -59,7 +59,7 @@
         </li>
 
         <li class="menu-item @if ($menu == 'ekskul') active @endif">
-            <a href="/admin-area/data-ekstrakulikuler" class="menu-link">
+            <a href="/admin-area/ekskul" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-book"></i>
                 Data Ekstrakulikuler
             </a>
@@ -69,8 +69,8 @@
             <span class="menu-header-text">Admin</span>
         </li>
 
-        <li class="menu-item @if ($menu == 'admin') active @endif">
-            <a href="/admin-area/admin" class="menu-link">
+        <li class="menu-item @if ($menu == 'adm') active @endif">
+            <a href="/admin-area/adm" class="menu-link">
                 <i class='menu-icon tf-icons bx bxs-user-account' ></i>
                 Data Admin
             </a>

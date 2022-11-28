@@ -1,11 +1,11 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
+<?php use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AkunController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\TUController;
+use App\Http\Controllers\EkskulController;
 
 
 /*
@@ -20,48 +20,70 @@ use App\Http\Controllers\GuruController;
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+        return view('index');
+    }
+
+);
 
 Route::get('sejarah', function () {
-    return view('sejarah');
-});
+        return view('sejarah');
+    }
+
+);
 
 Route::get('visimisi', function () {
-    return view('visimisi');
-});
+        return view('visimisi');
+    }
+
+);
 
 Route::get('so', function () {
-    return view('so');
-});
+        return view('so');
+    }
+
+);
 
 Route::get('dirgu', function () {
-    return view('dirgu');
-});
+        return view('dirgu');
+    }
+
+);
 
 Route::get('dirtu', function () {
-    return view('dirtu');
-});
+        return view('dirtu');
+    }
+
+);
 
 Route::get('ekskul', function () {
-    return view('ekskul');
-});
+        return view('ekskul');
+    }
+
+);
 
 Route::get('ppdb', function () {
-    return view('ppdb');
-});
+        return view('ppdb');
+    }
+
+);
 
 Route::get('kontak', function () {
-    return view('kontak');
-});
+        return view('kontak');
+    }
+
+);
 
 Route::get('showmore', function () {
-    return view('showmore');
-});
+        return view('showmore');
+    }
+
+);
 
 Route::get('isiberita', function () {
-    return view('isiberita');
-});
+        return view('isiberita');
+    }
+
+);
 
 //Admin : Login Page
 Route::get('/login', [AdminController::class, 'login'])->name('login')->middleware('guest');
@@ -117,26 +139,68 @@ Route::post('/admin-area/dirgu/edit/update', [GuruController::class, 'guru_updat
 //Admin : Guru Page -> Delete Data
 Route::get('/admin-area/dirgu/delete/{id}', [GuruController::class, 'guru_delete'])->middleware('auth');
 
+//Admin : TU Page
+Route::get('/admin-area/dirtu', [AdminController::class, 'tu'])->middleware('auth');
+
+//Admin : TU Page -> Search
+Route::post('/admin-area/dirtu', [TUController::class, 'tu_search'])->middleware('auth');
+
+//Admin : TU Page -> New Form
+Route::get('/admin-area/dirtu/new', [AdminController::class, 'tu_new'])->middleware('auth');
+
+//Admin : TU Page -> Submit
+Route::post('/admin-area/dirtu/submit', [TUController::class, 'tu_submit'])->middleware('auth');
+
+//Admin : TU Page -> Edit Form
+Route::get('/admin-area/dirtu/edit/{id}', [TUController::class, 'tu_edit'])->middleware('auth');
+
+//Admin : TU Page -> Edit Data
+Route::post('/admin-area/dirtu/edit/update', [TUController::class, 'tu_update'])->middleware('auth');
+
+//Admin : TU Page -> Delete Data
+Route::get('/admin-area/dirtu/delete/{id}', [TUController::class, 'tu_delete'])->middleware('auth');
+
+//Admin : Ekskul Page
+Route::get('/admin-area/ekskul', [AdminController::class, 'ekskul'])->middleware('auth');
+
+//Admin : Ekskul Page -> Search
+Route::post('/admin-area/ekskul', [EkskulController::class, 'ekskul_search'])->middleware('auth');
+
+//Admin : Ekskul Page -> New Form
+Route::get('/admin-area/ekskul/new', [AdminController::class, 'ekskul_new'])->middleware('auth');
+
+//Admin : Ekskul Page -> Submit
+Route::post('/admin-area/ekskul/submit', [EkskulController::class, 'ekskul_submit'])->middleware('auth');
+
+//Admin : Ekskul Page -> Edit Form
+Route::get('/admin-area/ekskul/edit/{id}', [EkskulController::class, 'ekskul_edit'])->middleware('auth');
+
+//Admin : Ekskul Page -> Edit Data
+Route::post('/admin-area/ekskul/edit/update', [EkskulController::class, 'ekskul_update'])->middleware('auth');
+
+//Admin : Ekskul Page -> Delete Data
+Route::get('/admin-area/ekskul/delete/{id}', [EkskulController::class, 'ekskul_delete'])->middleware('auth');
+
 //Admin : Admin
-Route::get('/admin-area/admin', [AdminController::class, 'admin'])->middleware('auth');
+Route::get('/admin-area/adm', [AdminController::class, 'adm'])->middleware('auth');
 
 //Admin : Admin -> Search
-Route::post('/admin-area/admin', [AkunController::class, 'admin_search'])->middleware('auth');
+Route::post('/admin-area/adm', [AdmController::class, 'adm_search'])->middleware('auth');
 
 //Admin : Admin -> Details
-Route::get('/admin-area/akun/detail', [AkunController::class, 'admin_detail'])->middleware('auth');
+Route::get('/admin-area/adm/detail', [AdmController::class, 'adm_detail'])->middleware('auth');
 
 //Admin : Admin -> New Data
-Route::get('/admin-area/akun/new', [AdminController::class, 'admin_new'])->middleware('auth');
+Route::get('/admin-area/adm/new', [AdminController::class, 'adm_new'])->middleware('auth');
 
 //Admin : Admin -> Submit
-Route::post('/admin-area/akun/submit', [AkunController::class, 'admin_submit'])->middleware('auth');
+Route::post('/admin-area/adm/submit', [AdmController::class, 'adm_submit'])->middleware('auth');
 
 //Admin : Admin -> Edit Page
-Route::get('/admin-area/akun/edit/{id}/{from}', [AkunController::class, 'admin_edit'])->middleware('auth');
+Route::get('/admin-area/adm/edit/{id}/{from}', [AdmController::class, 'adm_edit'])->middleware('auth');
 
 //Admin : Admin -> Edit Data
-Route::post('/admin-area/akun/edit/update', [AkunController::class, 'admin_update'])->middleware('auth');
+Route::post('/admin-area/adm/edit/update', [AdmController::class, 'adm_update'])->middleware('auth');
 
 //Admin : Admin -> Delete Data
-Route::get('/admin-area/akun/delete/{id}/{from}', [AkunController::class, 'admin_delete'])->middleware('auth');
+Route::get('/admin-area/adm/delete/{id}/{from}', [AdmController::class, 'adm_delete'])->middleware('auth');

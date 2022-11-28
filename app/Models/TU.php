@@ -6,24 +6,26 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class Ekskul extends Model
+class TU extends Model
 {
     use HasFactory;
 
-    protected $table = 'ekskul';
-    protected $primaryKey = 'id_ekskul';
+    protected $table = 'dirtu';
+    protected $primaryKey = 'id_tu';
     protected $keyType = 'string';
 
     protected $fillable = [
-        'id_ekskul',
-        'judul',
+        'id_tu',
+        'nip',
+        'nama',
+        'bagian',
         'foto'
     ];
     
     public $incrementing = false;
 
     public static function deleteImage($id) {
-        $id = Ekskul::where('id_ekskul', $id)->get();
+        $id = TU::where('id_tu', $id)->get();
 
         $count = count($id);
 
@@ -38,20 +40,20 @@ class Ekskul extends Model
 
     //Generate Automatic ID : Activity
     public static function generateID() {
-        $id = Ekskul::selectRaw('RIGHT (id_ekskul, 3) AS id_ekskul')->orderBy('id_ekskul', 'desc')->limit(1)->get();
+        $id = TU::selectRaw('RIGHT (id_tu, 3) AS id_tu')->orderBy('id_tu', 'desc')->limit(1)->get();
 
         $count = count($id);
 
         if ($count != null) {
-            $idn = $id[0] -> id_ekskul;
+            $idn = $id[0] -> id_tu;
 
             $a = substr($idn, -3);
 
             $f = $a+1;
 
-            $final = "EKS-00".$f;
+            $final = "TU-00".$f;
         } else {
-            $final = "EKS-001";
+            $final = "TU-001";
         }
 
         return $final;
