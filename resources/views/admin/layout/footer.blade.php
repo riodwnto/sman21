@@ -6,8 +6,7 @@
             <script>
                 document.write(new Date().getFullYear());
             </script>
-            Prodi Informatika, made with ❤️ by
-            <a href="https://github.com/authntcG" target="_blank" class="footer-link fw-bolder">authntcG!</a>
+            <strong><span>A2 Dev's</span></strong>. All Rights Reserved
         </div>
     </div>
 </footer>

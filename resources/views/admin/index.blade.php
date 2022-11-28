@@ -34,7 +34,7 @@
                                 <div class="user-progress d-flex align-items-center gap-1">
                                     <!-- <h6 class="mb-0"></h6> -->
                                     <span class="text-muted">Data</span>
-                                    <a href="/admin-area/agenda-kegiatan" class="btn btn-sm btn-outline-primary">Open</a>
+                                    <a href="/admin-area/berita-terkini" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
                         </li>
@@ -49,7 +49,7 @@
                                 <div class="user-progress d-flex align-items-center gap-1">
                                     <!-- <h6 class="mb-0"></h6> -->
                                     <span class="text-muted">Data</span>
-                                    <a href="/admin-area/dosen-pengajar" class="btn btn-sm btn-outline-primary">Open</a>
+                                    <a href="/admin-area/dirgu" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
                         </li>
@@ -64,7 +64,7 @@
                                 <div class="user-progress d-flex align-items-center gap-1">
                                     <!-- <h6 class="mb-0"></h6> -->
                                     <span class="text-muted">Data</span>
-                                    <a href="/admin-area/dosen-pengajar" class="btn btn-sm btn-outline-primary">Open</a>
+                                    <a href="/admin-area/dirtu" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
                         </li>
@@ -77,9 +77,9 @@
                                     <h6 class="mb-0">Data Ekstrakulikuler</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
-                                    <h6 class="mb-0">Filled : </h6>
+                                    <span class="text-muted">Data</span>
                                     <!-- <span class="text-muted"></span> -->
-                                    <a href="/admin-area/kurikulum" class="btn btn-sm btn-outline-primary">Open</a>
+                                    <a href="/admin-area/ekskul" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
                         </li>
