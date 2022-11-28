@@ -160,7 +160,7 @@
         </div>
 
         <div class="row">
-
+          {{-- @foreach ($berita as $data) --}}
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
@@ -172,43 +172,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Berita 2</h4>
-                <span>Kejadian</span>
-              </div>
-            </div>
-          </div>
-
-          <div a href="#" class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Berita 3</h4>
-                <span>Kejadian</span>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Berita 4</h4>
-                <span>Kejadian</span>
-              </div>
-            </div>
-          </div>
-
         </div>
 
         <div class="d-flex justify-content-center">
