@@ -7,7 +7,6 @@ use App\Models\Berita;
 use App\Models\Guru;
 use App\Models\TU;
 use App\Models\Ekskul;
-use App\Models\Akun;
 use App\Models\User;
 use App\Models\Counter;
 
@@ -125,20 +124,20 @@ class AdminController extends Controller
     //     ]);
     // }
 
-    public function account() {
-        $account = User::paginate(20);
+    public function adm() {
+        $adm = User::paginate(20);
 
-        return view('admin.account', [
-            'menu' => "pengguna",
-            'title' => 'Data Pengguna',
-            'account' => $account
+        return view('admin.adm', [
+            'menu' => "adm",
+            'title' => 'Data Admin',
+            'adm' => $adm
         ]);
     }
 
-    public function account_new() {
-        return view('admin.account_new', [
-            'menu' => "pengguna",
-            'title' => 'Data Pengguna Baru'
+    public function adm_new() {
+        return view('admin.adm_new', [
+            'menu' => "adm",
+            'title' => 'Data Admin Baru'
         ]);
     }
 

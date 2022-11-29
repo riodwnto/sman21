@@ -3,19 +3,19 @@
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="/admin-area"
-                class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/kategori-galeri" class="a-breadcrumbs">Data
-                Akun</a> / </span>Baru</h4>
+                class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/adm" class="a-breadcrumbs">Data
+                Admin</a> / </span>Baru</h4>
     <div class="card">
         <h5 class="card-header">
-            Tambah Pengguna Baru
+            Tambah Admin Baru
         </h5>
-        <form action="/admin-area/akun/submit" method="POST" enctype="multipart/form-data">
+        <form action="/admin-area/adm/submit" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label">Nama Pengguna</label>
+                            <label class="col-md-3 col-form-label">Nama Admin</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" name="name" required
                                     value="{{ old('name') }}" />
@@ -86,7 +86,7 @@
                                     </button>
                                     <p class="text-muted mb-0">Tipe file : .jpg atau .png. Ukuran maks
                                         800KB</p>
-                                    @error('foto')
+                                    @error('profil_pict')
                                     <div id="defaultFormControlHelp" class="form-text">
                                         {{ $message }}
                                     </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">
                         <div class="text-end">
-                            <a class="btn btn-warning" href="/admin-area/akun">
+                            <a class="btn btn-warning" href="/admin-area/adm">
                                 <span class="align-middle">Kembali</span>
                             </a>
                         </div>

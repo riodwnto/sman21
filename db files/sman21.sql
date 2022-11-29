@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `berita` (
   PRIMARY KEY (`id_berita`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel sman21.berita: ~1 rows (lebih kurang)
+-- Membuang data untuk tabel sman21.berita: ~2 rows (lebih kurang)
 INSERT INTO `berita` (`id_berita`, `judul`, `isi`, `sampul`, `url_slug`, `created_at`, `updated_at`) VALUES
 	('BR-002', 'Berita 2', '<p>Isi Berita 2</p>', '1669612587-BR-002.png', 'berita-2', '2022-11-27 22:16:27', '2022-11-27 22:16:27'),
 	('BR-003', 'Berita 1', '<p>Isi Berita 1</p>', '1669623168-BR-003.png', 'berita-1', '2022-11-28 01:12:48', '2022-11-28 01:12:48');
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `dirgu` (
   PRIMARY KEY (`id_guru`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel sman21.dirgu: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel sman21.dirgu: ~2 rows (lebih kurang)
 INSERT INTO `dirgu` (`id_guru`, `nip`, `nama`, `matpel`, `foto`, `created_at`, `updated_at`) VALUES
 	('GR-001', 12345678, 'Ahmad Aditya', '<p>Bengkel Motor</p>', '1669612743-GR-001.png', NULL, NULL),
 	('GR-002', 123456781, 'Nicolaus Buha', '<p>Ilmu Pengetahuan Alam</p>', '1669612797-GR-002.png', NULL, NULL);
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `dirtu` (
   PRIMARY KEY (`id_tu`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel sman21.dirtu: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel sman21.dirtu: ~2 rows (lebih kurang)
 INSERT INTO `dirtu` (`id_tu`, `nip`, `nama`, `bagian`, `foto`, `created_at`, `updated_at`) VALUES
 	('TU-001', 123456780, 'Ridwan Alfalhan', '<p>Pengarsipan</p>', '1669613432-TU-001.png', NULL, NULL),
 	('TU-002', 123456781, 'Rio Dwianto', '<p>Keuangan</p>', '1669623226-TU-002.png', NULL, NULL);
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `ekskul` (
   PRIMARY KEY (`id_ekskul`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel sman21.ekskul: ~1 rows (lebih kurang)
+-- Membuang data untuk tabel sman21.ekskul: ~2 rows (lebih kurang)
 INSERT INTO `ekskul` (`id_ekskul`, `judul`, `foto`, `created_at`, `updated_at`) VALUES
 	('EKS-001', 'Kabaret', '1669617528-EKS-001.png', NULL, NULL),
 	('EKS-002', 'Futsal', '1669623250-EKS-002.png', NULL, NULL);
@@ -160,21 +160,23 @@ CREATE TABLE IF NOT EXISTS `personal_access_tokens` (
 
 -- membuang struktur untuk table sman21.users
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
+  `id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profil_pict` longtext COLLATE utf8mb4_unicode_ci,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel sman21.users: ~0 rows (lebih kurang)
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-	(1, 'Rio Dwianto', 'rio@gmail.com', '2022-11-28 04:50:16', '$2y$10$xrkLNA8wX8YufTWIVjuBtu7gjBU1qzqswN7Ap1ZoCqukWsTv7YDIW', NULL, '2022-11-28 04:54:07', '2022-11-28 04:54:09');
+-- Membuang data untuk tabel sman21.users: ~2 rows (lebih kurang)
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `profil_pict`, `remember_token`, `created_at`, `updated_at`) VALUES
+	('ADM-001', 'Rio Dwianto', 'rio@gmail.com', '2022-11-28 04:50:16', '$2y$10$xrkLNA8wX8YufTWIVjuBtu7gjBU1qzqswN7Ap1ZoCqukWsTv7YDIW', NULL, NULL, '2022-11-28 04:54:07', '2022-11-29 05:08:47'),
+	('ADM-002', 'Afghan Muhammad Bahri', 'afghan@gmail.com', NULL, '$2y$10$Xun/fmtb.1h9f9rCSDQJtOjYXu89ibxpavX630SbM6nESz4r8nqeu', NULL, NULL, '2022-11-29 05:30:39', '2022-11-29 05:30:39');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

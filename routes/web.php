@@ -185,22 +185,22 @@ Route::get('/admin-area/ekskul/delete/{id}', [EkskulController::class, 'ekskul_d
 Route::get('/admin-area/adm', [AdminController::class, 'adm'])->middleware('auth');
 
 //Admin : Admin -> Search
-Route::post('/admin-area/adm', [AdmController::class, 'adm_search'])->middleware('auth');
+Route::post('/admin-area/adm', [AkunController::class, 'adm_search'])->middleware('auth');
 
 //Admin : Admin -> Details
-Route::get('/admin-area/adm/detail', [AdmController::class, 'adm_detail'])->middleware('auth');
+Route::get('/admin-area/adm/detail', [AkunController::class, 'adm_detail'])->middleware('auth');
 
 //Admin : Admin -> New Data
 Route::get('/admin-area/adm/new', [AdminController::class, 'adm_new'])->middleware('auth');
 
 //Admin : Admin -> Submit
-Route::post('/admin-area/adm/submit', [AdmController::class, 'adm_submit'])->middleware('auth');
+Route::post('/admin-area/adm/submit', [AkunController::class, 'adm_submit'])->middleware('auth');
 
 //Admin : Admin -> Edit Page
-Route::get('/admin-area/adm/edit/{id}/{from}', [AdmController::class, 'adm_edit'])->middleware('auth');
+Route::get('/admin-area/adm/edit/{id}/{from}', [AkunController::class, 'adm_edit'])->middleware('auth');
 
 //Admin : Admin -> Edit Data
-Route::post('/admin-area/adm/edit/update', [AdmController::class, 'adm_update'])->middleware('auth');
+Route::post('/admin-area/adm/edit/update', [AkunController::class, 'adm_update'])->middleware('auth');
 
 //Admin : Admin -> Delete Data
-Route::get('/admin-area/adm/delete/{id}/{from}', [AdmController::class, 'adm_delete'])->middleware('auth');
+Route::get('/admin-area/adm/delete/{id}/{from}', [AkunController::class, 'adm_delete'])->middleware('auth');

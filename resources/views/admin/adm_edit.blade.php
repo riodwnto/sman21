@@ -3,20 +3,20 @@
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="/admin-area"
-                class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/akun" class="a-breadcrumbs">Data Akun</a> / </span>Edit</h4>
+                class="a-breadcrumbs">Beranda</a> / <a href="/admin-area/adm" class="a-breadcrumbs">Data Admin</a> / </span>Edit</h4>
     <div class="card">
         <h5 class="card-header">
-            Edit Pengguna
+            Edit Admin
         </h5>
-        <form action="/admin-area/akun/edit/update" method="POST" enctype="multipart/form-data">
+        <form action="/admin-area/adm/edit/update" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label">ID Akun</label>
+                            <label class="col-md-3 col-form-label">ID Admin</label>
                             <div class="col-md-9">
-                                <input class="form-control" type="text" name="id" required readonly value="{{ $account[0] -> id }}"/>
+                                <input class="form-control" type="text" name="id" required readonly value="{{ $adm[0] -> id }}"/>
                                 @error('id')
                                 <div id="defaultFormControlHelp" class="form-text">
                                     {{ $message }}
@@ -27,9 +27,9 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div class="mb-3 row">
-                            <label class="col-md-3 col-form-label">Nama Pengguna</label>
+                            <label class="col-md-3 col-form-label">Nama Admin</label>
                             <div class="col-md-9">
-                                <input class="form-control" type="text" name="name" required value="{{ old('name' ,$account[0] -> name) }}"/>
+                                <input class="form-control" type="text" name="name" required value="{{ old('name' ,$adm[0] -> name) }}"/>
                                 @error('name')
                                 <div id="defaultFormControlHelp" class="form-text">
                                     {{ $message }}
@@ -42,7 +42,7 @@
                         <div class="mb-3 row">
                             <label class="col-md-3 col-form-label">Username</label>
                             <div class="col-md-9">
-                                <input class="form-control" type="email" name="email" required value="{{ old('email' ,$account[0] -> email) }}"/>
+                                <input class="form-control" type="email" name="email" required value="{{ old('email' ,$adm[0] -> email) }}"/>
                                 @error('email')
                                 <div id="defaultFormControlHelp" class="form-text">
                                     {{ $message }}
@@ -74,7 +74,7 @@
                         <div class="mb-3 row">
                             <label class="col-md-3 col-form-label">Foto</label>
                             <div class="col-sm-12 col-xl-6">
-                                <img src="{{ asset('../img/account/'.$account[0] -> profile_pict) }}" alt="Pratinjau Gambar..." class="d-block rounded img-fluid mb-3" id="uploadedAvatar" style="max-height: 300px;" />
+                                <img src="{{ asset('../img/account/'.$adm[0] -> profil_pict) }}" alt="Pratinjau Gambar..." class="d-block rounded img-fluid mb-3" id="uploadedAvatar" style="max-height: 300px;" />
                                 <div class="button-wrapper">
                                     <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
                                         <span class="d-none d-sm-block">Pilih Foto</span>
@@ -90,7 +90,7 @@
                                     </button>
                                     <p class="text-muted mb-0">Tipe file : .jpg atau .png. Ukuran maks
                                         800KB</p>
-                                    @error('profile_pict')
+                                    @error('profil_pict')
                                     <div id="defaultFormControlHelp" class="form-text">
                                         {{ $message }}
                                     </div>
@@ -114,12 +114,12 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">
                         <div class="text-end">
-                            @if ($admin === true)
-                            <a class="btn btn-warning" href="/admin-area/akun/detail">
+                            @if ($adm === true)
+                            <a class="btn btn-warning" href="/admin-area/adm/detail">
                                 <span class="align-middle">Kembali</span>
                             </a>
                             @else
-                            <a class="btn btn-warning" href="/admin-area/akun">
+                            <a class="btn btn-warning" href="/admin-area/adm">
                                 <span class="align-middle">Kembali</span>
                             </a>
                             @endif
@@ -133,14 +133,14 @@
 <div class="modal fade" id="modalGantiSandi" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
-            <form action="/admin-area/akun/edit/update" method="POST" enctype="multipart/form-data">
+            <form action="/admin-area/adm/edit/update" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="modal-header">
                     <h5 class="modal-title">Edit Sandi</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" readonly name="id" value="{{ old('id' ,$account[0] -> id) }}">
+                    <input type="hidden" readonly name="id" value="{{ old('id' ,$adm[0] -> id) }}">
                     <div class="row">
                         <div class="col-12">
                             <div class="mb-3">
