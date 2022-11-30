@@ -4,12 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
-use App\Models\Dosen;
-use App\Models\Tentang;
-use App\Models\Galeri;
-use App\Models\Kurikulum;
-use App\Models\MahasiswaPrestasi;
-use App\Models\Organisasi;
+use App\Models\Guru;
+use App\Models\TU;
+use App\Models\Ekskul;
+// use App\Models\User;
 
 class MainController extends Controller
 {
