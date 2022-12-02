@@ -36,7 +36,7 @@ class MainController extends Controller
     }
 
     public function lecturer() {
-        $dosen = Dosen::vdosen()->get();
+        $dosen = Dosen::->where('id', decrypt($id))->get();
 
         return view('main.lecturer', [
             'dosen' => $dosen,
