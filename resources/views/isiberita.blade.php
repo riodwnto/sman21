@@ -93,7 +93,7 @@
           <h2>Isi Berita</h2>
           <ol>
             <li><a href="/">Home</a></li>
-            <li><a href="showmore">Berita Terkini</a></li>
+            <li><a href="berita">Berita Terkini</a></li>
             <li>Isi Berita</li>
           </ol>
         </div>

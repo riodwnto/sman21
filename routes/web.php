@@ -73,8 +73,8 @@ Route::get('kontak', function () {
 
 );
 
-Route::get('showmore', function () {
-        return view('showmore');
+Route::get('berita', function () {
+        return view('berita');
     }
 
 );

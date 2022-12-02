@@ -1,3 +1,9 @@
+@php
+use App\Http\Controllers\CounterController;
+
+CounterController::visitorCount();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -162,20 +168,31 @@
         <div class="row">
           {{-- @foreach ($berita as $data) --}}
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            {{-- <a href="{{'/berita/'.$data -> url_slug}}"> --}}
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Berita 1</h4>
-                <span>Kejadian</span>
+                {{-- <h4>{{ $data -> judul }}</h4> --}}
+                <div class="row">
+                  <div class="col col-lg-6 col-md-6 ">
+                      <i class="ri-calendar-event-line"></i>
+                      {{-- <p>{{ $data -> tgl_kirim }}</p> --}}
+                  </div>
+                  {{-- <div   class="col col-lg-6 col-md-6 align-text-right">
+                      <i class="right-icons ri-user-line">Admin</i>
+                  </div> --}}
+                </div>
+                {{-- <span class="limit-chars">{{ strip_tags($data -> isi) }}</span> --}}
               </div>
             </div>
+          </a>
           </div>
         </div>
 
         <div class="d-flex justify-content-center">
-          <a href="showmore" class="btn btn-outline-dark">Show More</a>
+          <a href="berita" class="btn btn-outline-dark">Berita Lainnya</a>
         </div>
 
       </div>
