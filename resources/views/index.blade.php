@@ -104,7 +104,7 @@ CounterController::visitorCount();
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1016" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" data-purecounter-="-" class="purecounter"></span>
               <p>Peserta Didik</p>
             </div>
           </div>
@@ -112,7 +112,7 @@ CounterController::visitorCount();
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="bi bi-person-check"></i>
-              <span data-purecounter-start="0" data-purecounter-end="54" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $guru_count }}" data-purecounter-duration="1" class="purecounter"></span>
               <p>Tenaga Pendidik</p>
             </div>
           </div>
@@ -120,15 +120,15 @@ CounterController::visitorCount();
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-person-workspace"></i>
-              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Tenaga Kependidikan</p>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $tu_count }}" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Tata Usaha</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-universal-access"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $ekskul_count }}" data-purecounter-duration="1" class="purecounter"></span>
               <p>Ekstrakulikuler</p>
             </div>
           </div>

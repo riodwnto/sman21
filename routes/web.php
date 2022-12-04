@@ -6,6 +6,7 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\TUController;
 use App\Http\Controllers\EkskulController;
+use App\Http\Controllers\MainController;
 
 
 /*
@@ -19,11 +20,8 @@ use App\Http\Controllers\EkskulController;
 |
 */
 
-Route::get('/', function () {
-        return view('index');
-    }
-
-);
+//User : Main Page
+Route::get('/', [MainController::class, 'index']);
 
 Route::get('sejarah', function () {
         return view('sejarah');
@@ -43,17 +41,14 @@ Route::get('so', function () {
 
 );
 
-Route::get('dirgu', function () {
-        return view('dirgu');
-    }
+//User : Main Page
+Route::get('/dirgu', [MainController::class, 'dirgu']);
 
-);
+//User : Main Page
+Route::get('/dirtu', [MainController::class, 'dirtu']);
 
-Route::get('dirtu', function () {
-        return view('dirtu');
-    }
-
-);
+//User : Main Page
+Route::get('/', [MainController::class, 'index']);
 
 Route::get('ekskul', function () {
         return view('ekskul');
@@ -73,17 +68,11 @@ Route::get('kontak', function () {
 
 );
 
-Route::get('berita', function () {
-        return view('berita');
-    }
+//User : Main Page
+Route::get('/berita', [MainController::class, 'berita']);
 
-);
-
-Route::get('isiberita', function () {
-        return view('isiberita');
-    }
-
-);
+//User : Main Page
+Route::get('/isiberita', [MainController::class, 'isiberita']);
 
 //Admin : Login Page
 Route::get('/login', [AdminController::class, 'login'])->name('login')->middleware('guest');
