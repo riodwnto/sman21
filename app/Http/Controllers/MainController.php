@@ -7,7 +7,7 @@ use App\Models\Berita;
 use App\Models\Guru;
 use App\Models\TU;
 use App\Models\Ekskul;
-// use App\Models\User;
+// use App\Models\Siswa;
 
 class MainController extends Controller
 {
@@ -30,7 +30,7 @@ class MainController extends Controller
     public function guru() {
         $guru = Guru::get();
 
-        return view('main.guru', [
+        return view('guru', [
             'guru' => $guru,
             'menu' => 'dirgu',
             'title' => "Direktori Guru"
@@ -40,7 +40,7 @@ class MainController extends Controller
     public function tu() {
         $tu = TU::get();
 
-        return view('main.tu', [
+        return view('tu', [
             'tu' => $tu,
             'menu' => 'dirtu',
             'title' => "Direktori Tata Usaha"
@@ -50,7 +50,7 @@ class MainController extends Controller
     public function ekskul() {
         $ekskul = Ekskul::get();
 
-        return view('main.ekskul', [
+        return view('ekskul', [
             'ekskul' => $ekskul,
             'menu' => 'ekskul',
             'title' => "Ekstrakulikuler"
@@ -60,7 +60,7 @@ class MainController extends Controller
     public function berita() {
         $berita = Berita::paginate(8);
 
-        return view('main.berita', [
+        return view('berita', [
             'title' => 'Berita',
             'menu' => 'berita',
             'berita' => $berita
@@ -70,7 +70,7 @@ class MainController extends Controller
     public function isiberita($slug) {
         $berita = Berita::where('url_slug', $slug)->get();
 
-        return view('main.isiberita', [
+        return view('isiberita', [
             'title' => $berita[0] -> judul.' | Berita',
             'menu' => 'berita',
             'berita' => $berita

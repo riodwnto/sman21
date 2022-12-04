@@ -48,13 +48,7 @@ Route::get('/dirgu', [MainController::class, 'dirgu']);
 Route::get('/dirtu', [MainController::class, 'dirtu']);
 
 //User : Main Page
-Route::get('/', [MainController::class, 'index']);
-
-Route::get('ekskul', function () {
-        return view('ekskul');
-    }
-
-);
+Route::get('/ekskul', [MainController::class, 'ekskul']);
 
 Route::get('ppdb', function () {
         return view('ppdb');
@@ -72,7 +66,7 @@ Route::get('kontak', function () {
 Route::get('/berita', [MainController::class, 'berita']);
 
 //User : Main Page
-Route::get('/isiberita', [MainController::class, 'isiberita']);
+Route::get('/berita/{slug}', [MainController::class, 'isiberita']);
 
 //Admin : Login Page
 Route::get('/login', [AdminController::class, 'login'])->name('login')->middleware('guest');
