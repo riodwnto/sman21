@@ -23,19 +23,19 @@ use App\Http\Controllers\MainController;
 //User : Main Page
 Route::get('/', [MainController::class, 'index']);
 
-Route::get('sejarah', function () {
+Route::get('/sejarah', function () {
         return view('sejarah');
     }
 
 );
 
-Route::get('visimisi', function () {
+Route::get('/visimisi', function () {
         return view('visimisi');
     }
 
 );
 
-Route::get('so', function () {
+Route::get('/so', function () {
         return view('so');
     }
 
@@ -50,13 +50,13 @@ Route::get('/dirtu', [MainController::class, 'dirtu']);
 //User : Main Page
 Route::get('/ekskul', [MainController::class, 'ekskul']);
 
-Route::get('ppdb', function () {
+Route::get('/ppdb', function () {
         return view('ppdb');
     }
 
 );
 
-Route::get('kontak', function () {
+Route::get('/kontak', function () {
         return view('kontak');
     }
 
