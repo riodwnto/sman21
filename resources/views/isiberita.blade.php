@@ -90,11 +90,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Isi Berita</h2>
+          <h2>{{ $berita-> judul }}</h2>
           <ol>
             <li><a href="/">Home</a></li>
-            <li><a href="berita">Berita Terkini</a></li>
-            <li>Isi Berita</li>
+            <li><a href="/berita">Berita Terkini</a></li>
+            <li>{{ $berita-> judul }}</li>
           </ol>
         </div>
 
@@ -103,7 +103,7 @@
     
     <section class="inner-page">
       <div class="container">
-        <p>Isi Berita</p>
+        <p>{!! $berita-> isi !!}</p>
       </div>
     </section>
 

@@ -171,17 +171,16 @@ CounterController::visitorCount();
             <a href="{{'/berita/'.$data -> url_slug}}">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>{{ $data -> judul }}</h4>
                 <div class="row">
-                  <div class="col col-lg-6 col-md-6 ">
-                      <i class="ri-calendar-event-line"></i>
+                  <div class="col col-lg-8 col-md-6 ">
                       <p>{{ $data -> created_at }}</p>
                   </div>
-                  <div   class="col col-lg-6 col-md-6 align-text-right">
-                      <i class="right-icons ri-user-line">Admin</i>
+                  <div class="col col-lg-4 col-md-6 ">
+                      <p>Admin</p>
                   </div>
                 </div>
                 <span class="limit-chars">{{ strip_tags($data -> isi) }}</span>

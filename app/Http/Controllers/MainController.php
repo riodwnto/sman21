@@ -27,20 +27,20 @@ class MainController extends Controller
         ]);
     }
 
-    public function guru() {
+    public function dirgu() {
         $guru = Guru::get();
 
-        return view('guru', [
+        return view('dirgu', [
             'guru' => $guru,
             'menu' => 'dirgu',
             'title' => "Direktori Guru"
         ]);
     }
 
-    public function tu() {
+    public function dirtu() {
         $tu = TU::get();
 
-        return view('tu', [
+        return view('dirtu', [
             'tu' => $tu,
             'menu' => 'dirtu',
             'title' => "Direktori Tata Usaha"
@@ -68,10 +68,10 @@ class MainController extends Controller
     }
 
     public function isiberita($slug) {
-        $berita = Berita::where('url_slug', $slug)->get();
+        $berita = Berita::where('url_slug', $slug)->firstOrFail();
 
         return view('isiberita', [
-            'title' => $berita[0] -> judul.' | Berita',
+            'title' => $berita -> judul.' | Berita',
             'menu' => 'berita',
             'berita' => $berita
         ]);
