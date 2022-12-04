@@ -79,8 +79,8 @@
 
   <main id="main">
 
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
+  <!-- ======= About Section ======= -->
+  <section id="team" class="team section-bg">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
@@ -88,14 +88,13 @@
         <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
         <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
-      
-      <!-- ===== slide show ===== -->
+
       <div class="row">
         @foreach ($ekskul as $data)
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="img/{{ $data->foto }}" class="img-fluid" alt="">
+                <img src="img/{{ $data->foto }}" class="img-fluid" alt="" style="width: 100%; height: 300px; object-fit: cover">
               </div>
               <div class="member-info">
                 <h4>{{ $data->judul }}</h4>
@@ -104,8 +103,8 @@
           </div>
         @endforeach
       </div>
-    </div>
-  </section><!-- End Services Section -->
+  </div>
+</section><!-- End About Section -->
 
 </main><!-- End #main -->
 

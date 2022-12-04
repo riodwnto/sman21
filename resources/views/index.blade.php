@@ -171,7 +171,7 @@ CounterController::visitorCount();
             <a href="{{'/berita/'.$data -> url_slug}}">
             <div class="member">
               <div class="member-img">
-                <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="">
+                <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="" style="width: 100%; height: 300px; object-fit: cover">
               </div>
               <div class="member-info">
                 <h4>{{ $data -> judul }}</h4>

@@ -92,7 +92,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Berita Terkini</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>Berita Terkini</li>
           </ol>
         </div>
@@ -111,7 +111,7 @@
             <a href="{{'/berita/'.$data -> url_slug}}">
             <div class="member">
               <div class="member-img">
-                <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="">
+                <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="" style="width: 100%; height: 300px; object-fit: cover">
               </div>
               <div class="member-info">
                 <h4>{{ $data -> judul }}</h4>

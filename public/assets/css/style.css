@@ -1278,7 +1278,7 @@ section {
 }
 
 .team .member .member-img {
-  position: relative;
+  position: fixed;
   overflow: hidden;
 }
 
