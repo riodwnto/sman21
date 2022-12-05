@@ -32,7 +32,7 @@
                                     <h6 class="mb-0">Berita Terkini</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
-                                    {{-- <h6 class="mb-0">{{  }}</h6> --}}
+                                    <h6 class="mb-0">{{ $berita }}</h6>
                                     <span class="text-muted">Data</span>
                                     <a href="/admin-area/berita-terkini" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
@@ -47,7 +47,7 @@
                                     <h6 class="mb-0">Direktori Guru</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
-                                    {{-- <h6 class="mb-0"></h6> --}}
+                                    <h6 class="mb-0">{{ $dirgu }}</h6>
                                     <span class="text-muted">Data</span>
                                     <a href="/admin-area/dirgu" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
@@ -62,7 +62,7 @@
                                     <h6 class="mb-0">Direktori Tata Usaha</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
-                                    {{-- <h6 class="mb-0"></h6> --}}
+                                    <h6 class="mb-0">{{ $dirtu }}</h6>
                                     <span class="text-muted">Data</span>
                                     <a href="/admin-area/dirtu" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
@@ -77,8 +77,8 @@
                                     <h6 class="mb-0">Data Ekstrakulikuler</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
+                                    <h6 class="mb-0">{{ $ekskul }}</h6>
                                     <span class="text-muted">Data</span>
-                                    {{-- <span class="text-muted"></span> --}}
                                     <a href="/admin-area/ekskul" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
@@ -92,9 +92,9 @@
                                     <h6 class="mb-0">Data Admin</h6>
                                 </div>
                                 <div class="user-progress d-flex align-items-center gap-1">
-                                    {{-- <h6 class="mb-0"></h6> --}}
+                                    <h6 class="mb-0">{{ $adm }}</h6>
                                     <span class="text-muted">Users</span>
-                                    <a href="/admin-area/akun" class="btn btn-sm btn-outline-primary">Open</a>
+                                    <a href="/admin-area/adm" class="btn btn-sm btn-outline-primary">Open</a>
                                 </div>
                             </div>
                         </li>
@@ -118,7 +118,7 @@
                                 <div>
                                     <small class="text-muted d-block">Today Traffic</small>
                                     <div class="d-flex align-items-center">
-                                        <!-- <h6 class="mb-0 me-1">{{ count($countervisit[0]) }} Visits</h6> -->
+                                        <h6 class="mb-0 me-1">{{ count($countervisit[0]) }} Visits</h6>
                                     </div>
                                 </div>
                             </div>

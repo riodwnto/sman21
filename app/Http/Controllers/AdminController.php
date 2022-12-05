@@ -13,26 +13,21 @@ use App\Models\Counter;
 class AdminController extends Controller
 {
     public function index() {
-        // $countberita = Berita::count();
-        // $countlecturer = Dosen::count();
-        // $countcategory = Galeri::kategori()->count();
-        // $countgallery = Galeri::vgaleri()->count();
-        // $countorganization = Organisasi::count();
-        // $countcurriculum = Kurikulum::count();
-        $countuser = User::count();
+        $countberita = Berita::count();
+        $countdirgu = Guru::count();
+        $countdirtu = TU::count();
+        $countekskul = Ekskul::count();
+        $countadm = User::count();
         $countervisits = Counter::getCounterData();
 
         return view('admin.index', [
             'title' => "Beranda",
             'menu' => "home",
-            // 'berita_count' => $countberita,
-            // 'information_count' => $countinformation,
-            // 'lecturer_count' => $countlecturer,
-            // 'category_count' => $countcategory,
-            // 'gallery_count' => $countgallery,
-            // 'organization_count' => $countorganization,
-            // 'curriculum_count' => $countcurriculum,
-            'user_count' => $countuser,
+            'berita' => $countberita,
+            'adm' => $countadm,
+            'ekskul' => $countekskul,
+            'dirtu' => $countdirtu,
+            'dirgu' => $countdirgu,
             'countervisit' => $countervisits,
         ]);
     }

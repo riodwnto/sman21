@@ -87,52 +87,52 @@ function saveDataModal() {
     document.getElementById('kategori').hidden = true;
 }
 
-function showWeather(data) {
-    var temp = Math.round(parseFloat(data.main.temp) - 273.15);
-    var temp_alt = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
+// function showWeather(data) {
+//     var temp = Math.round(parseFloat(data.main.temp) - 273.15);
+//     var temp_alt = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
 
-    var city = data.name;
-    var humid = data.main.humidity;
+//     var city = data.name;
+//     var humid = data.main.humidity;
 
-    var iconcode = data.weather[0].icon;
-    var iconurl = "http://openweathermap.org/img/wn/" + iconcode + ".png";
+//     var iconcode = data.weather[0].icon;
+//     var iconurl = "http://openweathermap.org/img/wn/" + iconcode + ".png";
 
-    document.getElementById('temp').innerHTML = temp + '&deg; C';
-    document.getElementById('weather').src = iconurl;
-    document.getElementById('city').innerHTML = city;
-    document.getElementById('humidity').innerHTML = humid + '%';
+//     document.getElementById('temp').innerHTML = temp + '&deg; C';
+//     document.getElementById('weather').src = iconurl;
+//     document.getElementById('city').innerHTML = city;
+//     document.getElementById('humidity').innerHTML = humid + '%';
 
-    $(document).ready(function () {
-        $('.tooltip-weather').tooltip({
-            title: data.weather[0].description,
-            placement: "bottom"
-        });
-        $('.tooltip-temp').tooltip({
-            title: temp_alt + '° F',
-            placement: "bottom"
-        })
-    });
-}
+//     $(document).ready(function () {
+//         $('.tooltip-weather').tooltip({
+//             title: data.weather[0].description,
+//             placement: "bottom"
+//         });
+//         $('.tooltip-temp').tooltip({
+//             title: temp_alt + '° F',
+//             placement: "bottom"
+//         })
+//     });
+// }
 
-function weatherCheck(position) {
-    var key = '91ef40359a0cddfd234587dffe67a3f8';
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+// function weatherCheck(position) {
+//     var key = 'KEY_API';
+//     var lat = position.coords.latitude;
+//     var lon = position.coords.longitude;
 
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + key + '&lang=id')
-        .then(function (resp) {
-            return resp.json()
-        }) // Convert data to json
-        .then(function (data) {
-            showWeather(data);
-        })
-        .catch(function () {
-            alert('Tidak dapat menampilkan cuaca.')
-        });
-}
+//     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + key + '&lang=id')
+//         .then(function (resp) {
+//             return resp.json()
+//         }) // Convert data to json
+//         .then(function (data) {
+//             showWeather(data);
+//         })
+//         .catch(function () {
+//             alert('Tidak dapat menampilkan cuaca.')
+//         });
+// }
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(weatherCheck);
-    }
-}
+// function getLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(weatherCheck);
+//     }
+// }

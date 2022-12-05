@@ -11,22 +11,22 @@
         <li><a class="nav-link scrollto active" href="/">Home</a></li>
         <li class="dropdown"><a href=""><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="sejarah">Sejarah</a></li>
-                <li><a href="visimisi">Visi dan Misi</a></li>
-                <li><a href="so">Struktur Organisasi</a></li>
+                <li><a href="/sejarah">Sejarah</a></li>
+                <li><a href="/visimisi">Visi dan Misi</a></li>
+                <li><a href="/so">Struktur Organisasi</a></li>
                 <li class="dropdown"><a href="#"><span>Direktori</span><i class="bi bi-chevron-right"></i></a>
             <ul>
-                <li><a href="dirgu">Direktori Guru</a></li>
-                <li><a href="dirtu">Direktori Tata Usaha</a></li>
+                <li><a href="/dirgu">Direktori Guru</a></li>
+                <li><a href="/dirtu">Direktori Tata Usaha</a></li>
                 </ul>
         </li>
         </ul>
         </li>
-        <li><a class="nav-link scrollto" href="ekskul">Ekstrakulikuler</a></li>
+        <li><a class="nav-link scrollto" href="/ekskul">Ekstrakulikuler</a></li>
         <li><a class="nav-link scrollto" href="#">E-Learning</a></li>
-        <li><a class="nav-link scrollto " href="ppdb">PPDB</a></li>
+        <li><a class="nav-link scrollto " href="/ppdb">PPDB</a></li>
         <li><a class="nav-link scrollto" href="#">Perpustakaan</a></li>
-        <li><a class="nav-link scrollto" href="kontak">Kontak</a></li>
+        <li><a class="nav-link scrollto" href="/kontak">Kontak</a></li>
         <li><a class="nav-link scrollto" href="tel:0227565909"><i class='bi bi-telephone-fill' style="font-size: 17px"></i></a></li>
         <li><a class="nav-link scrollto" href="mailto:sman21bdg@yahoo.co.id" target="_blank""><i class='bi bi-envelope-fill' style="font-size: 17px"></i></a></li>
         </ul>
