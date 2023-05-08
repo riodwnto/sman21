@@ -19,7 +19,6 @@
       <div class="section-title">
         <h2>Contact</h2>
         <h3><span>Contact Us</span></h3>
-        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
 
       <div class="row" data-aos="fade-up" data-aos-delay="100">
