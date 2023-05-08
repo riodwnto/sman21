@@ -41,7 +41,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="info-box  mb-4">
             <i class="bx bx-phone-call"></i>
-            <h3>Call Us</h3>
+            <h3>Telefon</h3>
             <p>(022) 7565909</p>
           </div>
         </div>
