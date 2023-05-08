@@ -21,7 +21,6 @@ return new class extends Migration
             $table->text("sampul");
             $table->text("url_slug");
             $table->timestamps();
-
             $table->primary('id_berita');
         });
     }
