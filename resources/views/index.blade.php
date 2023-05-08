@@ -22,7 +22,6 @@
         <div class="section-title">
           <h2>Informasi Umum</h2>
           <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente beatae corrupti placeat quas doloremque iusto, consequuntur ad voluptates. Impedit architecto autem fugit temporibus debitis eius ea excepturi esse distinctio. Fuga.</p> 
         </div>
 
         <div class="row">
@@ -88,7 +87,6 @@
         <div class="section-title">
           <h2>Berita</h2>
           <h3>Berita <span>Terkini</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
         <div class="row">
