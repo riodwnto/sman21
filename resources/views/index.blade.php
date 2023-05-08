@@ -38,7 +38,7 @@
             <div class="count-box">
               <i class="bi bi-person-check"></i>
               <span data-purecounter-start="0" data-purecounter-end="{{ $guru_count }}" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Tenaga Pendidik</p>
+              <p>Pendidik/Tenaga Kerja</p>
             </div>
           </div>
 
