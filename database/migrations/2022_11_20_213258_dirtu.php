@@ -20,7 +20,6 @@ return new class extends Migration
             $table->text("bagian");
             $table->text("foto");
             $table->timestamps();
-
             $table->primary('id_tu');
         });
     }
