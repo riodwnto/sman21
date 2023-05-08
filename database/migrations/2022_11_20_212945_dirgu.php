@@ -20,7 +20,6 @@ return new class extends Migration
             $table->text("matpel");
             $table->text("foto");
             $table->timestamps();
-
             $table->primary('id_guru');
         });
     }
