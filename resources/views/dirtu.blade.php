@@ -19,7 +19,6 @@
       <div class="section-title">
         <h2>Direktori Tata Usaha</h2>
         <h3>SMA NEGERI <span>21 BANDUNG</span></h3>
-        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
 
       <div class="row">
