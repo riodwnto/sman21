@@ -8,6 +8,7 @@
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>BERITA TERKINI</h1>
       <h2 class="mt-2">SMA NEGERI 21 BANDUNG</h2>
+      <p>SMAN TERBAIK DIKOTA BANDUNG</p>
     </div>
   </section><!-- End Hero -->
 
