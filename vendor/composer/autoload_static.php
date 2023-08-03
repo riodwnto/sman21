@@ -533,6 +533,7 @@ class ComposerStaticInit356291789e695129d0b6bd010b27dfbe
         'App\\Http\\Controllers\\GuruController' => __DIR__ . '/../..' . '/app/Http/Controllers/GuruController.php',
         'App\\Http\\Controllers\\JenisController' => __DIR__ . '/../..' . '/app/Http/Controllers/JenisController.php',
         'App\\Http\\Controllers\\MainController' => __DIR__ . '/../..' . '/app/Http/Controllers/MainController.php',
+        'App\\Http\\Controllers\\MenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/MenuController.php',
         'App\\Http\\Controllers\\RakController' => __DIR__ . '/../..' . '/app/Http/Controllers/RakController.php',
         'App\\Http\\Controllers\\SiswaController' => __DIR__ . '/../..' . '/app/Http/Controllers/SiswaController.php',
         'App\\Http\\Controllers\\TUController' => __DIR__ . '/../..' . '/app/Http/Controllers/TUController.php',

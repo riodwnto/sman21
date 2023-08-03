@@ -12,6 +12,7 @@ use App\Http\Controllers\BukuController;
 use App\Http\Controllers\RakController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\MenuController;
 
 
 /*
@@ -81,6 +82,7 @@ Route::post('/loginaction', [AkunController::class, 'login'])->middleware('guest
 
 //Admin : Logout
 Route::get('/logout', [AkunController::class, 'logout'])->middleware('auth');
+
 
 //Admin : Main Page
 Route::get('/admin-area', [AdminController::class, 'index'])->middleware('auth');
@@ -193,6 +195,8 @@ Route::post('/admin-area/adm/edit/update', [AkunController::class, 'adm_update']
 //Admin : Admin -> Delete Data
 Route::get('/admin-area/adm/delete/{id}/{from}', [AkunController::class, 'adm_delete'])->middleware('auth');
 
+
+//Pekerjaan Dicky
 //routes jenis buku
 Route::get('/admin-area/jenis', [JenisController::class, 'index'])->middleware('auth');
 Route::get('/admin-area/jenis/new', [JenisController::class, 'jenis_new'])->middleware('auth');
@@ -224,6 +228,7 @@ Route::get('/admin-area/siswa/edit/{id}', [SiswaController::class, 'siswa_edit']
 Route::post('/admin-area/siswa/update', [SiswaController::class, 'siswa_update'])->middleware('auth');
 Route::get('/admin-area/siswa/delete/{id}', [SiswaController::class, 'siswa_delete'])->middleware('auth');
 
+
 Route::get('/admin-area/transaksi', [TransaksiController::class, 'index'])->middleware('auth');
 Route::post('/admin-area/qrcode', [TransaksiController::class, 'generateqr'])->middleware('auth');
 Route::get('/admin-area/hapuskeranjang/{id}', [TransaksiController::class, 'hapuskeranjang'])->middleware('auth');
@@ -236,3 +241,10 @@ Route::get('/admin-area/riwayat/delete/{id}', [TransaksiController::class, 'dele
 Route::get('/admin-area/riwayat/edit/{id}', [TransaksiController::class, 'edit'])->middleware('auth');
 Route::post('/admin-area/riwayat/update', [TransaksiController::class, 'update'])->middleware('auth');
 Route::get('/admin-area/riwayat/print/{id}', [TransaksiController::class, 'print'])->middleware('auth');
+
+Route::get('/admin-area/menu-master', [MenuController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/menu/new', [MenuController::class, 'menu_new'])->middleware('auth');
+Route::post('/admin-area/menu/insert', [MenuController::class, 'menu_insert'])->middleware('auth');
+Route::get('/admin-area/menu/edit/{id}', [MenuController::class, 'menu_edit'])->middleware('auth');
+Route::post('/admin-area/menu/update', [MenuController::class, 'menu_update'])->middleware('auth');
+Route::get('/admin-area/menu/delete/{id}', [MenuController::class, 'menu_delete'])->middleware('auth');

@@ -36,6 +36,15 @@
                 Berita Terkini
             </a>
         </li>
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Master Data</span>
+        </li>
+        <li class="menu-item @if ($menu == 'menu') active @endif">
+            <a href="/admin-area/menu-master" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-task"></i>
+               Menu
+            </a>
+        </li>
 
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Profil</span>

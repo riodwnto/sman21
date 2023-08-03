@@ -19,6 +19,7 @@ return array(
     'App\\Http\\Controllers\\GuruController' => $baseDir . '/app/Http/Controllers/GuruController.php',
     'App\\Http\\Controllers\\JenisController' => $baseDir . '/app/Http/Controllers/JenisController.php',
     'App\\Http\\Controllers\\MainController' => $baseDir . '/app/Http/Controllers/MainController.php',
+    'App\\Http\\Controllers\\MenuController' => $baseDir . '/app/Http/Controllers/MenuController.php',
     'App\\Http\\Controllers\\RakController' => $baseDir . '/app/Http/Controllers/RakController.php',
     'App\\Http\\Controllers\\SiswaController' => $baseDir . '/app/Http/Controllers/SiswaController.php',
     'App\\Http\\Controllers\\TUController' => $baseDir . '/app/Http/Controllers/TUController.php',
