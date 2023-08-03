@@ -6,7 +6,7 @@
             <script>
                 document.write(new Date().getFullYear());
             </script>
-            <strong><span>A2 Dev's</span></strong>. All Rights Reserved
+            <strong><span>C08</span></strong>. All Rights Reserved
         </div>
     </div>
 </footer>

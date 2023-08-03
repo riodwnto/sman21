@@ -89,7 +89,7 @@
               <!-- /Logo -->
               <p class="mb-4">Silahkan masuk dengan akun yang terdaftar.</p>
 
-              <form id="formAuthentication" class="mb-3" action="/login" method="POST" enctype="multipart/form-data">
+              <form id="formAuthentication" class="mb-3" action="loginaction " method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>

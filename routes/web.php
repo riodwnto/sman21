@@ -7,6 +7,12 @@ use App\Http\Controllers\GuruController;
 use App\Http\Controllers\TUController;
 use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\JenisController;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\RakController;
+use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\MenuController;
 
 
 /*
@@ -72,10 +78,11 @@ Route::get('/berita/{slug}', [MainController::class, 'isiberita']);
 Route::get('/login', [AdminController::class, 'login'])->name('login')->middleware('guest');
 
 //Admin : Verify Login
-Route::post('/login', [AkunController::class, 'login'])->middleware('guest');
+Route::post('/loginaction', [AkunController::class, 'login'])->middleware('guest');
 
 //Admin : Logout
 Route::get('/logout', [AkunController::class, 'logout'])->middleware('auth');
+
 
 //Admin : Main Page
 Route::get('/admin-area', [AdminController::class, 'index'])->middleware('auth');
@@ -187,3 +194,57 @@ Route::post('/admin-area/adm/edit/update', [AkunController::class, 'adm_update']
 
 //Admin : Admin -> Delete Data
 Route::get('/admin-area/adm/delete/{id}/{from}', [AkunController::class, 'adm_delete'])->middleware('auth');
+
+
+//Pekerjaan Dicky
+//routes jenis buku
+Route::get('/admin-area/jenis', [JenisController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/jenis/new', [JenisController::class, 'jenis_new'])->middleware('auth');
+Route::post('/admin-area/jenis/insert', [JenisController::class, 'jenis_insert'])->middleware('auth');
+Route::get('/admin-area/jenis/edit/{id}', [JenisController::class, 'jenis_edit'])->middleware('auth');
+Route::post('/admin-area/jenis/update', [JenisController::class, 'jenis_update'])->middleware('auth');
+Route::get('/admin-area/jenis/delete/{id}', [JenisController::class, 'jenis_delete'])->middleware('auth');
+
+//routes buku
+Route::get('/admin-area/buku', [BukuController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/buku/new', [BukuController::class, 'buku_new'])->middleware('auth');
+Route::post('/admin-area/buku/insert', [BukuController::class, 'buku_insert'])->middleware('auth');
+Route::get('/admin-area/buku/edit/{id}/{from}', [BukuController::class, 'buku_edit'])->middleware('auth');
+Route::post('/admin-area/buku/update', [BukuController::class, 'buku_update'])->middleware('auth');
+Route::get('/admin-area/buku/delete/{id}', [BukuController::class, 'buku_delete'])->middleware('auth');
+
+//routes rak buku
+Route::get('/admin-area/rak', [RakController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/rak/new', [RakController::class, 'rak_new'])->middleware('auth');
+Route::post('/admin-area/rak/insert', [RakController::class, 'rak_insert'])->middleware('auth');
+Route::get('/admin-area/rak/edit/{id}', [RakController::class, 'rak_edit'])->middleware('auth');
+Route::post('/admin-area/rak/update', [RakController::class, 'rak_update'])->middleware('auth');
+Route::get('/admin-area/rak/delete/{id}', [RakController::class, 'rak_delete'])->middleware('auth');
+//routes rak buku
+Route::get('/admin-area/siswa', [SiswaController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/siswa/new', [SiswaController::class, 'siswa_new'])->middleware('auth');
+Route::post('/admin-area/siswa/insert', [SiswaController::class, 'siswa_insert'])->middleware('auth');
+Route::get('/admin-area/siswa/edit/{id}', [SiswaController::class, 'siswa_edit'])->middleware('auth');
+Route::post('/admin-area/siswa/update', [SiswaController::class, 'siswa_update'])->middleware('auth');
+Route::get('/admin-area/siswa/delete/{id}', [SiswaController::class, 'siswa_delete'])->middleware('auth');
+
+
+Route::get('/admin-area/transaksi', [TransaksiController::class, 'index'])->middleware('auth');
+Route::post('/admin-area/qrcode', [TransaksiController::class, 'generateqr'])->middleware('auth');
+Route::get('/admin-area/hapuskeranjang/{id}', [TransaksiController::class, 'hapuskeranjang'])->middleware('auth');
+Route::post('/admin-area/checkout', [TransaksiController::class, 'checkout'])->middleware('auth');
+Route::get('/admin-area/riwayat', [TransaksiController::class, 'riwayat'])->middleware('auth');
+Route::get('/admin-area/riwayat/detail/{id}', [TransaksiController::class, 'detailriwayat'])->middleware('auth');
+Route::get('/admin-area/riwayat/kembalisemua/{id}', [TransaksiController::class, 'kembalisemua'])->middleware('auth');
+Route::get('/admin-area/riwayat/kembalikan/{id}/{any}', [TransaksiController::class, 'kembalikan'])->middleware('auth');
+Route::get('/admin-area/riwayat/delete/{id}', [TransaksiController::class, 'delete'])->middleware('auth');
+Route::get('/admin-area/riwayat/edit/{id}', [TransaksiController::class, 'edit'])->middleware('auth');
+Route::post('/admin-area/riwayat/update', [TransaksiController::class, 'update'])->middleware('auth');
+Route::get('/admin-area/riwayat/print/{id}', [TransaksiController::class, 'print'])->middleware('auth');
+
+Route::get('/admin-area/menu-master', [MenuController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/menu/new', [MenuController::class, 'menu_new'])->middleware('auth');
+Route::post('/admin-area/menu/insert', [MenuController::class, 'menu_insert'])->middleware('auth');
+Route::get('/admin-area/menu/edit/{id}', [MenuController::class, 'menu_edit'])->middleware('auth');
+Route::post('/admin-area/menu/update', [MenuController::class, 'menu_update'])->middleware('auth');
+Route::get('/admin-area/menu/delete/{id}', [MenuController::class, 'menu_delete'])->middleware('auth');

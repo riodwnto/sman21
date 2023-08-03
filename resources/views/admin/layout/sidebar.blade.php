@@ -2,9 +2,10 @@
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
-        <a href="index.html" class="app-brand-link">
+        <a href="index.html" class="app-brand-link d-flex gap-2">
+            <img src="/assets/img/logo21.png" width="50"> 
             <span class="app-brand-logo demo" style="">
-                <img src="{{ asset('main/img/logo-icon.ico') }}" alt="">
+                Dashboard
             </span>
             <!--<span class="app-brand-text demo menu-text fw-bolder ms-2">IF-Admin</span>-->
         </a>
@@ -33,6 +34,15 @@
             <a href="/admin-area/berita-terkini" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-task"></i>
                 Berita Terkini
+            </a>
+        </li>
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Master Data</span>
+        </li>
+        <li class="menu-item @if ($menu == 'menu') active @endif">
+            <a href="/admin-area/menu-master" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-task"></i>
+               Menu
             </a>
         </li>
 
@@ -73,6 +83,45 @@
             <a href="/admin-area/adm" class="menu-link">
                 <i class='menu-icon tf-icons bx bxs-user-account' ></i>
                 Data Admin
+            </a>
+        </li>
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Perpustakaan</span>
+        </li>
+        <li class="menu-item @if ($menu == 'siswa') active @endif">
+            <a href="/admin-area/siswa" class="menu-link">
+                <i class='menu-icon tf-icons bx bxs-user' ></i>
+                Siswa
+            </a>
+        </li>
+        <li class="menu-item @if ($menu == 'rak') active @endif">
+            <a href="/admin-area/rak" class="menu-link">
+                <i class='menu-icon tf-icons bx bxl-squarespace' ></i>
+                Rak Buku
+            </a>
+        </li>
+        <li class="menu-item @if ($menu == 'jenis') active @endif">
+            <a href="/admin-area/jenis" class="menu-link">
+                <i class='menu-icon tf-icons bx bxs-book' ></i>
+                Jenis Buku
+            </a>
+        </li>
+        <li class="menu-item @if ($menu == 'buku') active @endif">
+            <a href="/admin-area/buku" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-book-add' ></i>
+                Buku
+            </a>
+        </li>
+        <li class="menu-item @if ($menu == 'transaksi') active @endif">
+            <a href="/admin-area/transaksi" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-transfer' ></i>
+                Transaksi
+            </a>
+        </li>
+        <li class="menu-item @if ($menu == 'riwayat') active @endif">
+            <a href="/admin-area/riwayat" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-history' ></i>
+                Riwayat
             </a>
         </li>
     </ul>

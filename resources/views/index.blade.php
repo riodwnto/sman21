@@ -92,7 +92,7 @@
         <div class="row">
           @foreach ($berita as $data)
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <a href="{{'/berita/'.$data -> url_slug}}">
+            <a href="{{'berita/'.$data -> url_slug}}">
             <div class="member">
               <div class="member-img">
                 <img src="img/information/{{ $data->sampul }}" class="img-fluid" alt="" style="width: 100%; height: 300px; object-fit: cover">
