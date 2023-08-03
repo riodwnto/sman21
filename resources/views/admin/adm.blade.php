@@ -75,7 +75,6 @@
                 </tbody>
             </table>
         </div>
-        {{ $adm->links('admin.layout.pagination') }}
     </div>
 </div>
 @endsection
