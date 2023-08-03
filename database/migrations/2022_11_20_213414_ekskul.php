@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string("judul", 255);
             $table->text("foto");
             $table->timestamps();
-
             $table->primary('id_ekskul');
         });
     }
