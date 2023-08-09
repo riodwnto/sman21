@@ -248,3 +248,6 @@ Route::post('/admin-area/menu/insert', [MenuController::class, 'menu_insert'])->
 Route::get('/admin-area/menu/edit/{id}', [MenuController::class, 'menu_edit'])->middleware('auth');
 Route::post('/admin-area/menu/update', [MenuController::class, 'menu_update'])->middleware('auth');
 Route::get('/admin-area/menu/delete/{id}', [MenuController::class, 'menu_delete'])->middleware('auth');
+
+// Rio --> Content
+Route::get('/admin-area/content', [ContentController::class, 'index'])->middleware('auth');

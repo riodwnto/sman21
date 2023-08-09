@@ -45,6 +45,12 @@
                Menu
             </a>
         </li>
+        <li class="menu-item @if ($menu == 'content') active @endif">
+            <a href="/admin-area/content" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-task"></i>
+               Content
+            </a>
+        </li>
 
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Profil</span>
