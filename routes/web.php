@@ -13,6 +13,8 @@ use App\Http\Controllers\RakController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ContentController;
+use App\Http\Controllers\ContentCatController;
 
 
 /*
@@ -251,3 +253,16 @@ Route::get('/admin-area/menu/delete/{id}', [MenuController::class, 'menu_delete'
 
 // Rio --> Content
 Route::get('/admin-area/content', [ContentController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/content/new', [ContentController::class, 'content_new'])->middleware('auth');
+Route::post('/admin-area/content/insert', [ContentController::class, 'content_insert'])->middleware('auth');
+Route::get('/admin-area/content/edit/{id}', [ContentController::class, 'content_edit'])->middleware('auth');
+Route::post('/admin-area/content/update', [ContentController::class, 'content_update'])->middleware('auth');
+Route::get('/admin-area/content/delete/{id}', [ContentController::class, 'content_delete'])->middleware('auth');
+
+// Content Category
+Route::get('/admin-area/contentcat', [ContentCatController::class, 'index'])->middleware('auth');
+Route::get('/admin-area/contentcat/new', [ContentCatController::class, 'contentcat_new'])->middleware('auth');
+Route::post('/admin-area/contentcat/insert', [ContentCatController::class, 'contentcat_insert'])->middleware('auth');
+Route::get('/admin-area/contentcat/edit/{id}', [ContentCatController::class, 'contentcat_edit'])->middleware('auth');
+Route::post('/admin-area/contentcat/update', [ContentCatController::class, 'contentcat_update'])->middleware('auth');
+Route::get('/admin-area/contentcat/delete/{id}', [ContentCatController::class, 'contentcat_delete'])->middleware('auth');
